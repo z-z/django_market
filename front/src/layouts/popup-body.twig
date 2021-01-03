@@ -1,0 +1,10 @@
+<div onclick="event.stopPropagation();" class="g-popup _popup {{ popupName }}">
+	<div class="g-popup__close" onclick="o2.popups.closePopup()">
+		<svg role="img" class="close-popup">
+			<use xlink:href="#close-popup"></use>
+		</svg>
+	</div>
+	<div class="g-popup__body">
+		{% block popupConent %}{% endblock %}
+	</div>
+</div>

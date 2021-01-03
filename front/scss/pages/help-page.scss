@@ -1,0 +1,71 @@
+.help-page__title
+{
+	font-size: 28px;
+	font-weight: $bold-font;
+	line-height: normal;
+	margin-bottom: 36px;
+}
+.help-page__wrapper
+{
+	display: flex;
+}
+.help-page__flex-wrapper
+{
+	display: flex;
+	padding-bottom: 43px;
+}
+.help-page__wr
+{
+	margin-left: 40px;
+}
+.help-page__item
+{
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding: 4px 16px 10px 16px;
+	margin-right: -16px;
+	margin-left: -16px;
+	border-bottom: 1px solid $light-grey;
+	justify-content: space-between;
+	align-items: center;
+	display: none;
+}
+.help-page__item.help-page__item_mb
+{
+	margin-bottom: 24px;
+}
+.help-page__wr.help-page__wr_open
+{
+	max-height: 5000px;
+}
+.help-page__arrow-svg
+{
+	transition: all ease-in-out 0.2s;
+	transform: rotate(180deg);
+}
+.help-page__arrow-svg_open
+{
+	transform: rotate(0);
+	transition: all ease-in-out 0.2s;
+}
+@media(max-width: $mobile-sm)
+{
+	.help-page__title
+	{
+		margin-bottom: 24px;
+	}
+	.help-page__item
+	{
+		display: flex;
+	}
+	.help-page__wr
+	{
+		max-height: 0;
+		overflow: hidden;
+		margin-left: 0;
+	}
+	.help-page__flex-wrapper
+	{
+		flex-direction: column;
+	}
+}

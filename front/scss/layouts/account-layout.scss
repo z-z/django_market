@@ -1,0 +1,73 @@
+.title--account
+{
+	margin-bottom: 32px;
+}
+.account
+{
+	display: flex;
+	align-items: top;
+}
+.account__nav
+{
+	max-width: 170px;
+	width: 170px;
+}
+.account__nav-item
+{
+	a
+	{
+		display: flex;
+		align-items: center;
+		padding-bottom: 12px;
+		margin-bottom: 12px;
+		border-bottom: 1px solid $light-grey;
+		fill: $light-grey;
+		color: $black
+	}
+	svg
+	{
+		fill: $grey;
+	}
+}
+.account__nav-item--active
+	{
+		a
+		{
+			color: $green;
+		}
+		svg
+		{
+			fill: $green;
+		}
+	}
+.account__nav-name
+{
+	margin-left: 16px;
+}
+.account__wrapper
+{
+	display: flex;
+}
+.account__right
+{
+	margin-left: 65px;
+	flex-grow: 1;
+}
+@media(max-width: $mobile-sm)
+{
+	.account__wrapper
+	{
+		max-width: 288px;
+		width: 288px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.account__nav
+	{
+		display: none;
+	}
+	.account__right
+	{
+		margin-left: 0;
+	}
+}

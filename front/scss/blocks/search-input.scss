@@ -1,0 +1,107 @@
+.search-input__block {position: relative; }
+.ic-close-input {display: none; }
+.search-input
+{
+	border: 1px solid $grey;
+	border-radius: 6px;
+	width: 428px;
+	height: 32px;
+	font-size: 14px;
+	color: $cblack;
+	padding-left: 12px;
+	position: relative;
+	transition: .2s;
+	&::-webkit-input-placeholder {color: $dark-grey; }
+	&::-webkit-input-placeholder {color: $dark-grey; }
+	&::-moz-placeholder {color: $dark-grey; }
+	&:-moz-placeholder {color: $dark-grey; }
+	&:-ms-input-placeholder {color: $dark-grey; }
+	&:focus {border-color: $green; }
+	&:focus + .search-input__icons .ic-close-input {display: block; }
+	&:focus + .search-input__icons .ic-search {display: none; }
+}
+.search-input__icons
+{
+	cursor: pointer;
+	position: absolute;
+	right: 8px;
+	top: 4px;
+	display: flex;
+	align-items: center;
+	line-height: 0;
+}
+.search-input__close {display: none; }
+.search-input__items
+{
+	margin-top: 16px;
+	margin-left: 32%;
+	li {margin-bottom: 8px; }
+}
+
+.search-input__items-wr
+{
+	background-color: $white;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.1);
+	display: none;
+}
+.search-input__item
+{
+	font-size: 14px;
+	color: $black;
+	display: flex;
+	align-items: center;
+	line-height: normal;
+
+}
+.search-input__item-img
+{
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.search-input__all
+{
+	margin-top: 24px;
+	a
+	{
+		font-size: 14px;
+		color: $light-green;
+	}
+}
+.search-input__items-wr_active {display: block; }
+@media(max-width:940px)
+{
+	.search-input__items {margin-left: 21%; }
+}
+@media (max-width: 830px)
+{
+	.search-input {max-width: 300px; }
+	.search-input__items {margin-left: 24%; }
+}
+
+@media (max-width: $mobile-sm)
+{
+	.search-input__wrapper {position: relative; }
+	.search-input__items {margin-left: 0; }
+	.search-input__block
+	{
+		margin-top: 16px;
+		width: 100%;
+		display: none;
+	}
+	.search-input__block_active {display: block; }
+	.search-input
+	{
+		width: 100%;
+		max-width: none;
+	}
+}

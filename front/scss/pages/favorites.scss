@@ -1,0 +1,144 @@
+.favorites
+{
+	padding-bottom: 80px;
+}
+.favorites__title
+{
+	font-size: 28px;
+	font-weight: $bold-font;
+	line-height: normal;
+	margin-bottom: 0;
+}
+.favorites__items
+{
+	display: grid;
+	grid-template-columns: repeat(4, 235px);
+	justify-content: space-between;
+	grid-gap: 32px 0;
+	margin-bottom: 32px;
+}
+.favorites__top-wrapper
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 32px;
+}
+.favorites__wrapper
+{
+	margin-bottom: 40px;
+}
+.favorites__clear
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $grey;
+	border-radius: 6px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 14px;
+	cursor: pointer;
+
+	&:hover
+	{
+		border: 1px solid $green;
+		color: $green;
+
+		svg
+		{
+			fill: $green;
+		}
+	}
+
+	svg
+	{
+		fill: $cblack;
+	}
+}
+.favorites__clear-text
+{
+	margin-right: 7px;
+	font-weight: $bold-font;
+	font-size: 12px;
+}
+.favorites__сlean
+{
+	display: none;
+	text-align: center;
+	margin-bottom: 40px;
+	padding-top: 48px;
+}
+.favorites__clean-main-icon
+{
+	margin-bottom: 24px;
+}
+.favorites__сlean-title
+{
+	font-size: 24px;
+	line-height: normal;
+	font-weight: 500;
+	color: $dark-grey;
+	margin-bottom: 16px;
+	display: inline-block;
+}
+.favorites__сlean-text
+{
+	display: block;
+	font-size: 14px;
+	line-height: 24px;
+	color: $dark-grey;
+	margin-bottom: 32px;
+
+	svg
+	{
+		width: 20px;
+		height: 20px;
+		margin-bottom: -4px;
+	}
+}
+.favorites__main-button
+{
+	display: inline-block;
+	width: 100px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+@media (max-width: $tablet)
+{
+	.favorites__items
+	{
+		grid-template-columns: repeat(3, 235px);
+	}
+}
+@media (max-width: $mobile-sm)
+{
+	.favorites__items
+	{
+		grid-template-columns: repeat(2, 212px);
+	}
+	.favorites__title
+	{
+		font-size: 24px;
+	}
+}
+@media (max-width: $mobile-xs)
+{
+	.favorites__items
+	{
+		grid-template-columns: repeat(2, 136px);
+	}
+	.favorites__сlean-title
+	{
+		letter-spacing: -0.1px;
+	}
+	.favorites__сlean
+	{
+		padding-top: 0;
+	}
+	.favorites__top-wrapper
+	{
+		margin-bottom: 40px;
+	}
+}

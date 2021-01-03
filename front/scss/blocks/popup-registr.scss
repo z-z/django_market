@@ -1,0 +1,29 @@
+.popup-registr__input { margin-bottom: 16px; }
+.popup-registr__input-pasword { margin-bottom: 24px; }
+.popup-registr__restore
+{
+	text-align: right;
+	margin-bottom: 24px;
+	letter-spacing: .07px;
+	font-size: 11px;
+	line-height: 11px;
+}
+.popup-confirm__restore-link { color: #00ca5f; }
+.popup-registr__desc
+{
+	font-size: 11px;
+	line-height: 13px;
+	margin-bottom: 24px;
+}
+.popup-registr__btn
+{
+	width: 100%;
+	font-size: 15px;
+}
+.popup-registr__btn-reg { margin-bottom: 8px; }
+
+@media (max-width: $mobile-sm)
+{
+	.popup-registr__text-soc { margin-bottom: 16px; }
+	.popup-registr__restore { margin-bottom: 16px; }
+}

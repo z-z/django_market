@@ -1,0 +1,26 @@
+{% extends "./layouts/account-layout.twig" %}
+{% block account %}
+
+<h3 class="title title--account">Смена пароля</h3>
+<div class="account-secutity__form">
+	<div class="account-security__form-item">
+		<span>Действующий пароль *</span>
+		<div class="l-input__sub-text">Error message</div>
+		<input type="password" placeholder="Действующий пароль">
+	</div>
+	<div class="account-security__form-item">
+		<span>Новый пароль *</span>
+		<div class="l-input__sub-text">Error message</div>
+		<input type="password" placeholder="Новый пароль">
+	</div>
+	<div class="account-security__form-item">
+		<span>Подтверждение пароля *</span>
+		<div class="l-input__sub-text">Error message</div>
+		<input type="password" placeholder="Подтверждение пароля">
+	</div>
+</div>
+	<div class="account-details__button">
+		<button class="g-primary-button g-primary-button--account-details" disabled="disabled">Сохранить</button>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,339 @@
+.button
+{
+	background-color: $green;
+	border-radius: 6px;
+	height: 32px;
+	color: $white;
+	transition: 0.3s all;
+	font-weight: $bold-font;
+	font-size: 15px;
+	&:hover
+	{
+		background-color: $dark-green;
+	}
+	border: none;
+	&:disabled
+	{
+		background-color: $grey;
+		color: $light-grey;
+	}
+}
+.g-sale
+{
+	font-size: 14px;
+	font-weight: 500;
+	background-color: #f44336;
+	color: #fff;
+	padding-right: 8px;
+	padding-left: 8px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	line-height: 24px;
+	font-weight: $medium-font;
+}
+.header__button
+{
+	display: flex;
+	align-items: center;
+	span
+	{
+		margin-right: 8px;
+	}
+	padding-left: 15px;
+	padding-right: 6px;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 6px;
+}
+.more-btn
+{
+	font-size: 16px;
+	line-height: 12px;
+	font-weight: 500;
+	color: #fff;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	max-width: 123px;
+	border: 1px solid #fff;
+	display: block;
+	text-align: center;
+	border-radius: 6px;
+	transition: .2s;
+
+	&:hover
+	{
+		border: 1px solid $green;
+		color: $green;
+	}
+}
+.g-secondary-button
+{
+	width: 92px;
+	text-align: center;
+	font-weight: $bold-font;
+	font-weight: bold;
+	font-size: 12px;
+	color: $cblack;
+	background-color: $white;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	line-height: 12px;
+	border-radius: 6px;
+	border: 1px solid $green;
+	border-color: #cfd8dc;
+	transition: .2s;
+	cursor: pointer;
+
+	&:hover
+	{
+		border-color: $green;
+		color: $green;
+	}
+}
+.g-primary-button
+{
+	width: 92px;
+	text-align: center;
+	font-weight: $bold-font;
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	background-color: $green;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	line-height: 12px;
+	border-radius: 6px;
+	border: 1px solid $green;
+	transition: .2s;
+	cursor: pointer;
+
+	&:hover
+	{
+		background-color: $dark-green;
+		border-color: $dark-green;
+	}
+
+	&--account-details
+	{
+		width: 120px;
+		font-size: 14px;
+
+		&:disabled
+		{
+			border-color: $grey;
+			background-color: $grey;
+			color: $light-grey;
+		}
+	}
+}
+.g-unactive
+{
+	height: 0;
+	min-height: auto;
+	padding: 0;
+	margin: 0;
+	transition: all 0.1s;
+}
+.g-dnone
+{
+	display: none;
+}
+.slider-prev,.slider-next
+{
+	cursor: pointer;
+	position: absolute;
+
+	&:hover
+	{
+		svg:first-child
+		{
+			display: none;
+		}
+		svg:last-child
+		{
+			display: block;
+		}
+	}
+	svg
+	{
+		max-width: 32px;
+		max-height: 32px;
+	}
+	svg:last-child
+	{
+		display: none;
+	}
+}
+.simple-button
+{
+	width: 100%;
+	font-weight: $bold-font;
+	color: $black;
+	border: solid 1px $grey;
+	border-radius: 6px;
+	line-height: normal;
+	height: 40px;
+	transition: 0.3s all;
+	font-size: 15px;
+	&:hover
+	{
+		color: $green;
+		border-color: $green;
+	}
+	&--orders
+	{
+		padding-left: 13px;
+		padding-right: 13px;
+		font-size: 12px;
+		padding-top: 13px;
+		display: block;
+		text-align: center;
+	}
+}
+.simple-button_catalog{display: none;}
+.simple-button_questions
+{
+	width: 81px;
+	height: 32px;
+	font-size: 12px;
+	display: block;
+}
+.g-pagination-button
+{
+	font-size: 14px;
+	border-radius: 6px;
+	border: 1px solid $light-grey;
+	color: $black;
+	font-weight: $bold-font;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 20px;
+	transition: 0.2s all;
+	svg
+	{
+		margin-right: 8px;
+		margin-left: 8px;
+		&:last-child
+		{
+			display: none;
+		}
+	}
+	&:hover
+	{
+		color: $green;
+		border-color: $green;
+		svg:last-child
+		{
+			display: block;
+		}
+		svg:first-child
+		{
+			display: none;
+		}
+	}
+	&:active
+	{
+		color: $green;
+		border-color: $green;
+	}
+	#ic-left-arrow:hover path
+	{
+		fill: red !important;
+	}
+}
+.g-pagination-button--back{margin-right: 16px;}
+.g-pagination-button--next
+{
+	padding-left: 20px;
+	padding-right: 0;
+}
+.pagination__wr svg
+{
+	color: red !important;
+}
+.pagination__wr svg path
+{
+	fill: currentColor !important;
+}
+.heart
+{
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	background-image:url( 'https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png');
+	background-position: left;
+	background-repeat:no-repeat;
+	background-size:2900%;
+	position: absolute;
+	top: -13px;
+	right: -13px;
+	opacity: 0;
+}
+.heart.is_animating {
+	animation: heart-burst .7s steps(28) 1;
+	opacity: 1;
+}
+.button-activate
+{
+	width: 172px;
+	height: 40px;
+	border-radius: 6px;
+	border: solid 1px $grey;
+	color: $black;
+	font-weight: $bold-font;
+	transition: 0.3s all;
+	&:hover
+	{
+
+		color: $green;
+		border-color: $green;
+	}
+	&--account-details
+	{
+		max-width: 111px;
+		width: 100%;
+		margin-left: 8px;
+		font-size: 12px;
+	}
+}
+.button--order-register
+{
+	width: 172px;
+	height: 40px;
+	font-weight: $bold-font;
+	color: $white;
+}
+.simple-button--filter{display: none;}
+@keyframes heart-burst
+{
+	from {background-position:left;}
+	to { background-position:right;}
+}
+@media (max-width: $mobile-sm)
+{
+	.simple-button--filter{display: block;}
+	.button-activate
+	{
+		width: 148px;
+		margin-left: 4px;
+		padding-left: 19px;
+		padding-right: 19px;
+		&--account-details
+		{
+			padding-left: 13px;
+			margin-left: 8px;
+		}
+	}
+	.simple-button_catalog{display: block;}
+}
+@media(max-width: $mobile-xs)
+{
+	.simple-slider__wrapper .simple-button
+	{
+		display: block;
+	}
+}

@@ -1,0 +1,40 @@
+.payment__title
+{
+	font-size: 18px;
+	font-weight: $bold-font;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+.payment__info
+{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 24px;
+}
+.payment__cards-title
+{
+	font-weight: $bold-font;
+	margin-bottom: 16px;
+}
+.payment__cards
+{
+	svg
+	{
+		border: 1px solid $grey;
+		border-radius: 5px;
+		width: 78px;
+		height: 32px;
+
+		&:not(:last-child)
+		{
+			margin-right: 8px;
+		}
+	}
+}
+@media(max-width: $mobile-sm)
+{
+	.payment__title
+	{
+		display: none;
+	}
+}

@@ -1,0 +1,180 @@
+/* ********************** */
+@import 'svg-symbols';
+/* vendors */
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
+@import 'vendors/no-ui-slider';
+/* base */
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/controls';
+@import 'base/checkbox';
+@import 'base/radio';
+@import 'base/forms';
+
+/* layouts */
+@import 'layouts/default';
+@import 'layouts/index';
+@import 'layouts/account-layout';
+@import 'layouts/popup-body';
+@import 'layouts/empty';
+
+
+/* cblocks */
+@import 'cblocks/header';
+@import 'cblocks/footer';
+@import 'cblocks/banners';
+@import 'cblocks/catalog-filter';
+
+/* blocks */
+@import 'blocks/promo-top';
+@import 'blocks/top-info';
+@import 'blocks/top-menu';
+@import 'blocks/catalog-menu';
+@import 'blocks/search-input';
+@import 'blocks/catalog-mobmenu';
+@import 'blocks/product-item';
+@import 'blocks/product-item-small';
+@import 'blocks/products-carousel';
+@import 'blocks/auth-line';
+@import 'blocks/main-slider';
+@import 'blocks/banner';
+@import 'blocks/simple-slider';
+@import 'blocks/discounts-panel';
+@import 'blocks/news-slider';
+@import 'blocks/breadcrumbs';
+@import 'blocks/detail-news';
+@import 'blocks/detail-description';
+@import 'blocks/product-rating';
+@import 'blocks/catalog-section-menu';
+@import 'blocks/pagination';
+@import 'blocks/sidebar-menu';
+@import 'blocks/main-slider-item';
+@import 'blocks/catalog-filter';
+@import 'blocks/price-slider';
+@import 'blocks/checkout-summary';
+@import 'blocks/checkout-addresses';
+@import 'blocks/select';
+@import 'blocks/popup-confirm';
+@import 'blocks/popup-auth';
+@import 'blocks/popup-registr';
+@import 'blocks/popup-recovery';
+@import 'blocks/news-card';
+@import 'blocks/back';
+@import 'blocks/help-menu';
+@import 'blocks/delivery';
+@import 'blocks/questions';
+@import 'blocks/payment';
+@import 'blocks/refund';
+@import 'blocks/providers';
+@import 'blocks/wholesale';
+@import 'blocks/legal';
+@import 'blocks/faq';
+@import 'blocks/added';
+@import 'blocks/error-block';
+
+/* pages */
+@import 'pages/product-detail';
+@import 'pages/catalog';
+@import 'pages/catalog-filter-page';
+@import 'pages/order-register';
+@import 'pages/order-complit';
+@import 'pages/order-complit-pickup';
+@import 'pages/account-details';
+@import 'pages/cart';
+@import 'pages/account-security';
+@import 'pages/account-orders';
+@import 'pages/favorite-empty';
+@import 'pages/contacts';
+@import 'pages/favorites';
+@import 'pages/search-page';
+@import 'pages/news';
+@import 'pages/detail-news-page';
+@import 'pages/help-page.scss';
+@import 'pages/error-page.scss';
+
+.dropdown-arrow
+{
+	path
+	{
+		stroke: green;
+	}
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	outline: 0;
+	font-family: $rubik-font;
+	line-height: normal;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a { cursor: pointer; }
+svg { fill: #ffffff; transition: .135s }
+// svg > use { fill: #fff; }
+
+// прячем svg спрайт, но не скрываем т.к. display: none; ломает градиенты и т.д
+.svg-symbol
+{
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+}
+.overlay
+{
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(black, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+	z-index: -10;
+
+	&.show
+	{
+		visibility: visible;
+		opacity: 1;
+		transition: all 0.3s;
+		z-index: 4;
+	}
+}
+.notification__popap
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	display: none;
+}
+.notification__popap_content
+{
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    max-width: 400px;
+    border-bottom: 3px solid #01a54e;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

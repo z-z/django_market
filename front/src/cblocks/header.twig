@@ -1,0 +1,100 @@
+{% block header %}
+	<header class="header">
+		{% include '../blocks/promo-top.twig' %}
+		<div class="header__mobile">
+			<div class="container">
+				<div class="header__mobile-wrapper">
+					<div class="header__mobile-left">
+						<svg role="img" class="ic-menu header__mobile-hamburger" onclick="o2.popups.mobileMenuShow()">
+							<use xlink:href="#ic-menu"></use>
+						</svg>
+						<svg role="img" class="search-mobile header__mobile-search" onclick="o2.popups.searchInputShow()">
+							<use xlink:href="#search-mobile"></use>
+						</svg>
+						<svg role="img" class="ic-search-active" onclick="o2.popups.searchInputHide()">
+							<use xlink:href="#ic-search-active"></use>
+						</svg>
+					</div>
+					<a href="/" class="header__mobile-logo">
+						<svg role="img" class="logo-gelios-mark">
+							<use xlink:href="#logo-gelios-mark"></use>
+						</svg>
+						<svg role="img" class="logo-gelios-horizontal">
+						 	<use xlink:href="#logo-gelios-horizontal"></use>
+						</svg>
+					</a>
+					<div class="header__mobile-right">
+						<div class="header__mobile-icon">
+						<div class="header__bubble header__bubble_favorites"></div>
+							<svg role="img" class="ic-black-favorites">
+								<use xlink:href="#ic-black-favorites"></use>
+							</svg>
+						</div>
+						<div class="header__mobile-icon">
+							<div class="header__bubble">2</div>
+							<svg role="img" class="ic-cart">
+								<use xlink:href="#ic-cart"></use>
+							</svg>
+						</div>
+					</div>
+					{% include "../blocks/search-input.twig" %}
+				</div>
+			</div>
+		</div>
+		<div class="header__wrapper">
+			{% include '../blocks/top-info.twig' %}
+			{% include '../blocks/top-menu.twig' %}
+			<div class="header__bottom">
+				<div class="container">
+					<div class="header__bottom-wrapper">
+						<a class="header__logo" href="/">
+							<svg role="img" class="logo-gelios-horizontal header__logo-lg">
+								<use xlink:href="#logo-gelios-horizontal"></use>
+							</svg>
+							<svg role="img" class="logo-gelios-mark header__logo-md">
+								<use xlink:href="#logo-gelios-mark"></use>
+							</svg>
+						</a>
+						<div class="header__search-block">
+							<div class="button header__button" onclick="o2.popups.openCalalog()">
+								<span>Каталог</span>
+								<div class="header__btn-icon header__btn-icon_active">
+									<svg role="img" class="ic-down">
+										<use xlink:href="#ic-down"></use>
+									</svg>
+								</div>
+
+								<div class="header__btn-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+										<path fill="#FFF" fill-rule="evenodd" d="M4.939 15.582c.325.325.855.338 1.173.02l4.41-4.41 4.284 4.284a.85.85 0 0 0 1.187-.007.843.843 0 0 0 0-1.18l-4.284-4.284 4.417-4.417c.318-.318.305-.848-.02-1.173a.827.827 0 0 0-1.167-.014l-4.417 4.417-4.29-4.29a.843.843 0 0 0-1.18 0 .85.85 0 0 0-.007 1.186l4.29 4.29-4.41 4.41a.827.827 0 0 0 .014 1.168z"/>
+									</svg>
+								</div>
+							</div>
+
+							{% include '../blocks/search-input.twig' %}
+						</div>
+						<div class="header__bottom-item">
+							<div class="header__bubble header__bubble_favorites">22</div>
+							<svg role="img" class="ic-black-favorites">
+								<use xlink:href="#ic-black-favorites"></use>
+							</svg>
+							Избранное
+						</div>
+						<div class="header__bottom-item">
+							<div class="header__bubble">
+								2
+							</div>
+							<svg role="img" class="ic-cart">
+								<use xlink:href="#ic-cart"></use>
+							</svg>
+							Корзина
+						</div>
+					</div>
+				</div>
+			</div>
+			{% include '../blocks/catalog-menu.twig' %}
+		</div>
+		{% include "../blocks/search-input-items.twig" %}
+		{% include "../blocks/added.twig" %}
+	</header>
+{% endblock %}

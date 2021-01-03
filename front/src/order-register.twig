@@ -1,0 +1,165 @@
+{% extends "./layouts/layout.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include "blocks/breadcrumbs.twig" %}
+		<h2 class="title">Оформления заказа</h2>
+		<div class="order-register__wr">
+			<div class="order-register__item">
+				<h3 class="order-register__subtitle">Состав заказа</h3>
+				<div class="order-register__item-content">
+					<div class="order-register__item-img"><img src="../img/assets/im-discount-big.png" alt=""></div>
+					<div>
+						<div class="order-register__item-name">Кальцемин адванс таб. п.о №120</div>
+						<div class="order-register__item-quantity">2 шт.</div>
+					</div>
+				</div>
+			</div>
+			{% include './blocks/checkout-summary.twig' %}
+			<div class="order-register__tabs _tabs-container">
+				<h3 class="order-register__subtitle">Выбрите способ получения</h3>
+				<div class="order-register__tabs-wr">
+					<label class="order-register__tab" onclick="o2.tabs.open(this, 1)">
+						<input type="radio" name="order-tab" checked>
+						<div class="order-register__tab-box">
+							<svg role="img" class="ic-truck">
+								<use xlink:href="#ic-truck"></use>
+							</svg>
+							<div class="order-register__tab-text">
+								<span>Доставка</span>
+								<span>В удобное для вас время</span>
+							</div>
+						</div>
+					</label>
+					<label class="order-register__tab order-register__tab--pickup" onclick="o2.tabs.open(this, 2)">
+						<input type="radio" name="order-tab">
+						<div class="order-register__tab-box">
+							<svg role="img" class="ic-place">
+								<use xlink:href="#ic-place"></use>
+							</svg>
+							<div class="order-register__tab-text">
+								<span>Самовывоз</span>
+								<span>Забрать можно будет через 5 минут</span>
+							</div>
+						</div>
+					</label>
+				</div>
+				{% include './blocks/checkout-addresses.twig' %}
+				<div class="order-registr__delivery-type tab tab_open" data-tab-id="1">
+					<h3 class="order-register__subtitle">Адрес получателя</h3>
+					<div class="order-register__form order-register__form--delivery">
+						<form action="">
+							<div class="order-register__form-item order-register__form-item--error">
+								<span>Город *</span>
+								<input type="text" placeholder="Введите название города">
+							</div>
+							<div class="order-register__form-item">
+								<span>Улица *</span>
+								<input type="text" placeholder="Введите название улицы">
+							</div>
+							<div class="order-register__form-item">
+								<span>Дом *</span>
+								<input type="text" placeholder="Введите номер дома">
+							</div>
+							<div class="order-register__form-item">
+								<span>Квартира *</span>
+								<input type="email" placeholder="Введите номер квартры">
+							</div>
+						</form>
+					</div>
+					<h3 class="order-register__subtitle">Выберите тип доставки</h3>
+					<div class="order-register__checkboxes">
+						<div class="order-register__checkboxes-line">
+							<label class="g-radio">
+								<input type="radio" name="boom1" class="g-radio__input"  checked>
+								<div class="g-radio__body">
+									<span class="g-radio__box"></span>
+									<div class="order-register__checkboxes-text">
+										<div>
+											<span>Срочная сегодня</span>
+											<span>— 100 ₽</span>
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="order-register__checkboxes-line">
+							<label class="g-radio">
+								<input type="radio" name="boom1" class="g-radio__input">
+								<div class="g-radio__body">
+									<span class="g-radio__box"></span>
+									<div class="order-register__checkboxes-text">
+										<div>
+											<span>Сегодня в любое время</span>
+											<span>— Бесплатно</span>
+										</div>
+										<div class="order-register__checkboxes-subtext">Оператор согласует с вами время доставки заказа</div>
+									</div>
+								</div>
+							</label>
+						</div>
+						<div class="order-register__checkboxes-line">
+							<label class="g-radio">
+								<input type="radio" name="boom1" class="g-radio__input">
+								<div class="g-radio__body">
+									<span class="g-radio__box"></span>
+									<div class="order-register__checkboxes-text">
+										<div>
+											<span>Завтра в любое время</span>
+											<span>— Бесплатно</span>
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-register__form order-register__form--person">
+				<h3 class="order-register__subtitle">Личные данные</h3>
+				<form action="">
+					<div class="order-register__form-item">
+						<span>Имя *</span>
+						<input type="text" placeholder="Введите ваше имя">
+					</div>
+					<div class="order-register__form-item">
+						<span>Фамилия *</span>
+						<input type="text" placeholder="Введите вашу Фамилию">
+					</div>
+					<div class="order-register__form-item">
+						<span>Номер телефона *</span>
+						<input type="text" placeholder="+7 (000) 000-00-00">
+					</div>
+					<div class="order-register__form-item">
+						<span>Email *</span>
+						<input type="email" placeholder="Введите ваш email">
+					</div>
+					<div class="order-register__form-item order-register__form-item--promo">
+						<span>Промокод</span>
+						<div>
+							<input type="text" placeholder="Введите промокод">
+							<input type="text" placeholder="Промокод">
+							<button class="button-activate">Активировать</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="order-register__bottom">
+				<div class="order-register__bottom-offer">
+					<div>
+						<label class="g-checkbox catalog-menu__item">
+							<input type="checkbox" class="g-checkbox__input">
+							<div class="g-checkbox__body">
+								<span class="g-checkbox__box"></span>
+							</div>
+						</label>
+					</div>
+					<span>
+						Нажимая на кнопку оформить заказ я соглашаюсь с политикой конфиденциальности, публичной офертой и регистрируюсь на сайте.
+					</span>
+				</div>
+				<button class="button button--order-register">Оформить заказ</button>
+			</div>
+		</div>
+	</div>
+{% endblock %}

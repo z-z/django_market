@@ -1,0 +1,10 @@
+{% extends "./layouts/empty.twig" %}
+{% set emptyImg = "ic-attention-line" %}
+{% set emptyTitle = "Произошла ошибка" %}
+{% set emptyDescr = "На сервере произошла непредвиденная ошибка. Пожалуйста, подождите она вскоре будет исправлена." %}
+{% set emptyTitleCarousel = "Популярные товары" %}
+{% set carouselType = "common" %}
+
+{% block empty %}
+	{% include "blocks/back.twig" %}
+{% endblock empty %}

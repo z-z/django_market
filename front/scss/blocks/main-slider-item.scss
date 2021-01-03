@@ -1,0 +1,6 @@
+.main-slider__item-wr{ margin-bottom: 34px; }
+.main-slider__item-img { display: block; }
+@media(max-width: $mobile-sm)
+{
+	.main-slider__item-wr{ margin-bottom: 20px; }
+}

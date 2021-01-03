@@ -1,0 +1,138 @@
+{% extends "layouts/layout.twig" %}
+{# index.twig #}
+{% block page %}
+	<div class="product-detail container">
+		{% include "blocks/breadcrumbs.twig" %}
+		<h2>Кальцемин адванс таб. п.о №120</h2>
+		<div class="product-detail__code">
+			<span>Код товара:</span>
+			<span>6628741</span>
+		</div>
+		<div class="product-detail__wrapper">
+			<div class="product-detail__left">
+				<div class="product-detail__slider">
+					<div class="product-detail__slider-left">
+						<img class="product-detail__slider-left-img lazy-image" src="/img/assets/product@2x.png" alt="">
+						<div class="g-sale">Экономия 92%</div>
+					</div>
+					<div class="product-detail__slider-right-wrapper">
+						<div class="product-detail__slider-right">
+							<img class="product-detail__slider-right-img lazy-image active" src="/img/assets/product@2x.png" alt="" onclick="o2ProductItem.openProductImages(this)">
+							<img class="product-detail__slider-right-img lazy-image" src="/img/assets/im-discount-big@2x.png" alt="" onclick="o2ProductItem.openProductImages(this)">
+						</div>
+						<div class="product-detail__mob">
+							<div class="g-sale">-92%</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-detail__desktop">
+					{% include "blocks/detail-description.twig" with {"classes":""} %}
+				</div>
+			</div>
+
+			<div class="product-detail__right">
+				<div class="product-detail__price ">
+					<div class="product-detail__value">
+						<div class="product-detail__newprice">
+							<span>68,88</span>
+							<span>₽</span>
+						</div>
+						<div class="product-detail__lastprice">
+							<span>861</span>
+							<span>₽</span>
+						</div>
+					</div>
+					<div class="product-item _product-rating" data-rating="4.6">
+						{% include './blocks/product-rating.twig' %}
+					</div>
+				</div>
+				<div class="product-detail__brand">
+					<div class="product-detail__brand-title">
+						Производитель
+					</div>
+					<div class="product-detail__brand-name">
+						<span class="product-detail__brand-text">Все товары бренда:</span>
+						<span class="product-detail__brand-text product-detail__brand-text_green">Contract Pharmacal Corporation</span>
+					</div>
+				</div>
+
+				<ul class="product-detail__list">
+					<li class="product-detail__list-item">
+						<svg role="img" class="ic-info">
+							<use xlink:href="#ic-info"></use>
+						</svg>
+						<span>Необходим рецепт</span>
+					</li>
+					<li class="product-detail__list-item">
+						<svg role="img" class="ic-box">
+							<use xlink:href="#ic-box"></use>
+						</svg>
+						<span>Осталось 2 штуки</span>
+					</li>
+					<li class="product-detail__list-item">
+						<svg role="img" class="ic-calendar">
+							<use xlink:href="#ic-calendar"></use>
+						</svg>
+						<span>Годен до 12 февраля 2021</span>
+					</li>
+				</ul>
+
+				<div class="product-detail__buttons" >
+					<div class="product-detail__desktop">
+						<button class="product-detail__btn g-primary-button" onclick="o2.productItem.addToCart(this, event)">Добавить в корзину</button>
+					</div>
+					<div class="product-detail__mob">
+						<button class="product-detail__btn g-primary-button" onclick="o2.productItem.addToCart(this, event)">В корзину</button>
+					</div>
+					<div class="product-detail__favorites" onclick="o2Popups.saveFavorites(this)">
+						<svg role="img" class="ic-favorites">
+							<use xlink:href="#ic-favorites"></use>
+						</svg>
+						<svg role="img" class="ic-favorites-red">
+							<use xlink:href="#ic-favorites-red"></use>
+						</svg>
+						<span>В избранное</span>
+					</div>
+				</div>
+
+				<ul class="product-detail__list">
+					<li class="product-detail__list-item">
+						<svg role="img" class="ic-location">
+							<use xlink:href="#ic-location"></use>
+						</svg>
+						<div class="product-detail__list-wr">
+							<span>Ваш город:</span>
+							<span class="product-detail__list-item_green">Москва</span>
+						</div>
+					</li>
+					<li class="product-detail__list-item">
+					<svg role="img" class="ic-truck-detail">
+						<use xlink:href="#ic-truck-detail"></use>
+					</svg>
+						<span>Доставка 22 – 24 февраля — 390₽</span>
+					</li>
+					<li class="product-detail__list-item">
+						<svg role="img" class="ic-store">
+							<use xlink:href="#ic-store"></use>
+						</svg>
+						<span>Самовывоз 19 февраля — бесплатно</span>
+					</li>
+				</ul>
+				<a href="http://" class="product-detail__more">Подробнее про условия доставки</a>
+				<div class="product-detail__desktop">
+					{% include './blocks/detail-news.twig' %}
+				</div>
+				<div class="product-detail__mob">
+
+				</div>
+			</div>
+		</div>
+		<div class="product-detail__mob">
+			{% include "blocks/detail-description.twig" with {"classes":"detail-description__menu-mob-slider"} %}
+		</div>
+		{% include "./blocks/products-carousel.twig" with { "title":"С этим товаром покупают", "carouselType": "common", "classList":"products-carousel products-carousel--detail"} %}
+		<div class="product-detail__mob">
+			{% include './blocks/detail-news.twig' %}
+		</div>
+	</div>
+{% endblock %}

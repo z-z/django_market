@@ -1,0 +1,34 @@
+/*  Переменные со шрифтами  */
+
+$rubik-font: 'Rubik', sans-serif;
+
+/*  Переменные с гарнитурами шрифтов  */
+$medium-font: 500;
+$bold-font: 600;
+$black-font: 900;
+/*  Основные цвета  */
+$red: #f44336;
+$blue: #03a9f4;
+$yellow: #fdd835;
+$green: #01a54e;
+$light-green: #00ca5f;
+$pale-green: #87d4ab;
+$dark-green: #00833d;
+$grey: #cfd8dc;
+$light-grey: #eceff1;
+$dark-grey: #7b8e98;
+$black: #26323b;
+$white: #ffffff;
+$cblack: #263238;
+
+
+/* Разрешения */
+$tablet: 1024px;
+$mobile-sm: 768px;
+$mobile-xs: 475px;
+
+@mixin background {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

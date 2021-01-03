@@ -1,0 +1,26 @@
+{% extends "./layouts/empty.twig" %}
+{% set emptyImg = "ic-favorites-empty" %}
+{% set emptyTitle = "В ибранном ничего нет" %}
+{% set emptyDescr = "Нажимайте на кнопку  
+	<span>
+		<svg role='img' class='ic-favorites-fill'>
+			<use xlink:href='#ic-favorites-fill'></use>
+		</svg>
+	</span>
+		, чтобы сохранять товары в избранные" %}
+{% set emptyTitleCarousel = "Вы смотрели" %}
+{% set carouselType = "" %}
+
+{% block empty %}
+	{% include "blocks/breadcrumbs.twig" %}
+	<div class="favorites__head">
+		<h2 class="title">Избранное</h2>
+		<button class="simple-button simple-button--favorites"> Очистить всё
+			<span>
+				<svg role="img" class="ic-button-trash">
+					<use xlink:href="#ic-button-trash"></use>
+				</svg>
+			</span>
+		</button>
+	</div>
+{% endblock empty %}

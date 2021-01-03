@@ -1,0 +1,58 @@
+.g-input
+{
+	height: 40px;
+	width: 100%;
+	border: solid 1px $grey;
+	display: block;
+	font-family: $rubik-font;
+	font-size: 14px;
+	border-radius: 6px;
+	position: relative;
+	padding: 12px;
+	&::placeholder { color: $dark-grey; }
+	&:active,
+	&:focus { border-color: $green; }
+
+}
+.g-input--error
+{
+	border-color: $red;
+	&:after
+	{
+		content: 'Поле обязательного заполнения';
+		position: absolute;
+		bottom: -22px;
+		left: 0;
+		font-size: 12px;
+		color: $red;
+	}
+}
+
+// input with label
+.l-input
+{
+	display: block;
+	position: relative;
+}
+.l-input__label
+{
+	font-family: $rubik-font;
+	font-size: 12px;
+	color: $dark-grey;
+	margin-bottom: 8px;
+}
+.l-input__sub-text
+{
+	position: absolute;
+	left: 1px;
+	bottom: -18px;
+	font-family: $rubik-font;
+	font-size: 12px;
+	color: $red;
+	display: none;
+}
+.error
+{
+	.l-input__input {border-color: $red; }
+	.l-input__sub-text { display: block; }
+}

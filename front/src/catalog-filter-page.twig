@@ -1,0 +1,33 @@
+{% extends "./layouts/layout.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include "blocks/breadcrumbs.twig" %}
+		<h2 class="catalog__title">Простуда, грипп</h2>
+		<div class="catalog__wr catalog__wr--filter">
+			<div class="catalog__left catalog__left--filter">
+				{% include "./cblocks/catalog-filter.twig" %}
+			</div>
+			<div class="catalog__right">
+				<div class="catalog__catigories-btn" onclick="o2.popups.mainCatalogMenuShow()">
+					<div class="catalog__catigories-btn-right">
+						<svg role="img" class="ic-filter">
+							<use xlink:href="#ic-filter"></use>
+						</svg>
+						Сортировка и фильтры
+					</div>
+					<svg role="img" class="ic-right-catalog">
+						<use xlink:href="#ic-right-catalog"></use>
+					</svg>
+					<div class="devider devider_main-catalog"></div>
+				</div>
+				<div class="catalog__right-products catalog__right-products--show">
+					{% for i in 0..8 %}
+						{% include './blocks/product-item.twig' %}
+					{% endfor %}
+				</div>
+				{% include './blocks/pagination.twig' with vars only %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,198 @@
+.delivery-menu__item
+{
+	display: flex;
+	align-items: center;
+	color: $cblack;
+	font-size: 14px;
+	line-height: normal;
+	font-weight: normal;
+	color: $green;
+	svg
+	{
+		fill: $green;
+		margin-right: 16px;
+		width: 24px;
+		height: 24px;
+	}
+
+}
+.delivery__title
+{
+	font-size: 18px;
+	font-weight: $bold-font;
+	line-height: normal;
+	margin-bottom: 24px;
+}
+.delivery__info
+{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 24px;
+}
+.delivery__card-wr
+{
+	&:not(:last-child)
+	{
+		border-bottom: 1px solid $grey;
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+	}
+}
+.delivery__card-title
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+
+	span
+	{
+		font-size: 16px;
+		font-weight: $bold-font;
+		line-height: normal;
+	}
+	svg
+	{
+		fill: $grey;
+		margin-right: 16px;
+		width: 32px;
+		height: 32px;
+	}
+}
+.delivery__text
+{
+	padding-left: 47px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+	color:$dark-grey;
+	letter-spacing: -0.5px;
+	margin-top: 0;
+	margin-bottom: 24px;
+
+	a
+	{
+		color: $green;
+		font-weight: $bold-font;
+	}
+}
+.delivery__text.delivery__text_mb-none
+{
+	margin-bottom: 0;
+}
+.delivery__map-card
+{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+
+	svg
+	{
+		fill: $grey;
+	}
+
+	&:hover
+	{
+		color: $green;
+
+		svg
+		{
+			fill: $green;
+		}
+	}
+
+	&:not(:last-child)
+	{
+		border-bottom: 1px solid $grey;
+		margin-bottom: 16px;
+		padding-bottom: 16px;
+	}
+}
+.delivery__map-card.active
+{
+		color: $green;
+
+		svg
+		{
+			fill: $green;
+		}
+}
+.delivery__map-left
+{
+	margin-right: 20px;
+	max-width: 292px;
+	width: 100%;
+}
+.delivery__map-img
+{
+	width: 85px;
+	height: 60px;
+	margin-right: 20px;
+
+	img
+	{
+		border-radius: 6px;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.delivery__map-info
+{
+    width: 64%;
+}
+
+.delivery__map-block
+{
+	display: flex;
+	padding-left: 47px;
+}
+.delivery__map-right
+{
+	width: 100%;
+	height: 246px;
+	#map
+	{
+		height: 100%;
+	}
+}
+.delivery__shop-name
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 9px;
+
+	svg
+	{
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+	}
+}
+.delivery__adress
+{
+	font-weight: $bold-font;
+}
+
+@media(max-width: $mobile-sm)
+{
+	.delivery__title
+	{
+		display: none;
+	}
+	.delivery__map-block
+	{
+		flex-direction: column;
+		padding-left: 0;
+	}
+	.delivery__map-left
+	{
+		margin-bottom: 24px;
+	}
+	.delivery__text
+	{
+		letter-spacing: 0;
+	}
+}

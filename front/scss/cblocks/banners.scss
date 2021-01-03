@@ -1,0 +1,46 @@
+.banners
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+	font-size: 0;
+	.slick-dots
+	{
+		line-height: 0;
+		bottom: 22px;
+	}
+	.slick-dots .slick-active button
+	{
+		background-color: #fff;
+	}
+	.slick-dots li button::before
+	{
+		content: '';
+		width: 6px;
+		height: 6px;
+	}
+	.slick-dots li button
+	{
+		width: 6px;
+		height: 6px;
+		border-radius: 50px;
+		background: #000;
+		padding: 0;
+	}
+	.slick-dots li
+	{
+		width: 6px;
+		height: 6px;
+	}
+}
+@media(max-width: $mobile-xs)
+{
+	.banners
+	{
+		&.slick-dotted.slick-slider { margin-bottom: 26px; }
+		.slick-dots
+		{
+			bottom: 16px;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{# index.twig #}
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="search-page container">
+		{% include "blocks/breadcrumbs.twig" %}
+		 <div class="search-page__top-wrapper">
+			<h2 class="search-page__title">Найдено 567 товаров</h2>
+		</div>
+
+		<div class="search-page__wrapper">
+			<div class="search-page__items">
+				{% for item in 0..7 %}
+					{% include "./blocks/product-item.twig" with {"modified": true, "rating": false} %}
+				{% endfor %}
+			</div>
+			<button class="simple-button simple-button_catalog">Показать ещё</button>
+		</div>
+
+		<div class="search-page__сlean">
+			<div class="search-page__clean-main-icon">
+				<svg role="img" class="ic-search-not-found">
+					<use xlink:href="#ic-search-not-found"></use>
+				</svg>
+			</div>
+			<span class="search-page__сlean-title">
+				Ничего не нашлось
+			</span>
+			<p class="search-page__сlean-text">
+				Попробуйте написать название товара по-другому<br> или сократить запрос.
+			</p>
+			<a href="#" class="search-page__main-button g-secondary-button">
+				На главную
+			</a>
+		</div>
+		{% include "./blocks/products-carousel.twig" with { "title":"Вам может понравится", "carouselType": "small", "classList":"products-carousel_small" } %}
+	</div>
+{% endblock %}

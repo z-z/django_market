@@ -1,0 +1,35 @@
+
+<div class="{{ classList }}">
+	<div class="products-carousel__head">
+		<div class="products-carousel__title">{{ title }}</div>
+		<div class="products-carousel__arrows">
+			<div class="products-carousel__arrow slider-prev">
+				<svg role="img" class="left-normal">
+					<use xlink:href="#left-normal"></use>
+				</svg>
+				<svg role="img" class="left-hover">
+					<use xlink:href="#left-hover"></use>
+				</svg>
+			</div>
+			<div class="products-carousel__arrow slider-next">
+				<svg role="img" class="right-normal">
+					<use xlink:href="#right-normal"></use>
+				</svg>
+				<svg role="img" class="right-hover">
+					<use xlink:href="#right-hover"></use>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<div class="products-carousel-wr">
+		{% for item in 0..5 %}
+			<div class="product-carousel-slide-wr">
+				{% if carouselType == "common" %}
+					{% include "product-item.twig" %}
+				{% else %}
+					{% include "product-item-small.twig" %}
+				{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>

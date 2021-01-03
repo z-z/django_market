@@ -1,0 +1,31 @@
+{% extends "./layouts/layout.twig" %}
+
+{% block page %}
+	<div class="help-page">
+		<div class="container">
+			{% include "blocks/back.twig" %}
+			<h1 class="help-page__title">Помощь</h1>
+			<div class="help-page__flex-wrapper">
+				<a href="#" class="help-page__item help-page__item_mb" onclick="o2Popups.showHelpMobMenu(this)">
+					<div class="delivery-menu__item">
+						{% include "./../img/svg-for-sprite/ic-wholesale-menu.svg" %}
+						<span>Оптовый отдел</span>
+					</div>
+					<div class="help-page__arrow-svg">
+						{% include "./../img/svg-for-sprite/ic-down-arrow-none.svg" %}
+					</div>
+				</a>
+				<div class="help-page__wr">
+					{% include "blocks/help-menu.twig" with { "active":"4" }%}
+				</div>
+				<div class="help-page__wrapper">
+					{% include "blocks/wholesale.twig"%}
+				</div>
+			</div>
+		</div>
+		{% include "blocks/faq.twig" %}
+		<div class="container">
+			{% include "blocks/questions.twig" %}
+		</div>
+	</div>
+{% endblock %}

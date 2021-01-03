@@ -1,0 +1,40 @@
+.catalog-filter__block-title
+{
+	font-size: 14px;
+	font-weight: bold;
+	font-family: $rubik-font;
+	margin-bottom: 18px;
+	color: $cblack;
+}
+.catalog-filter__block-inputs .catalog-menu__item:nth-child(n+11)
+{
+	display: none;
+}
+.catalog-filter__block-inputs--price-slider{margin-bottom: 22px;}
+.catalog-filter__block
+{
+	padding-top: 16px;
+	border-bottom: 1px solid $light-grey;
+	&:nth-child(2){padding-top: 0;}
+}
+.catalog-filter__input-line{margin-bottom: 10px;}
+.catalog-filter__sort-price
+{
+	color: $dark-grey;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+	span{margin-left: 14px;}
+	svg:first-child{display: block;}
+	svg:last-child{display: none;}
+}
+.catalog-filter__sort-price--down
+{
+	svg:first-child{display: none;}
+	svg:last-child
+	{
+		display: block;
+		transform: rotateZ(180deg);
+	}
+}

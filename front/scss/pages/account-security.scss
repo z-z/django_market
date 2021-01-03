@@ -1,0 +1,32 @@
+.account-security__form-item
+{
+	position: relative;
+	margin-bottom: 25px;
+	span
+	{
+		display: block;
+		font-size: 12px;
+		margin-bottom: 8px;
+		color: $dark-grey;
+	}
+	input
+	{
+		height: 40px;
+		width: 100%;
+		padding-left: 12px;
+		border: solid 1px $grey;
+		border-radius: 6px;
+		width: 288px;
+		transition: .2s;
+		&::placeholder{color:$dark-grey;}
+		&:focus {border-color: $green;}
+	}
+	&:first-of-type
+	{
+		margin-bottom: 32px;
+	}
+	&:last-of-type
+	{
+		margin-bottom: 32px;
+	}
+}

@@ -1,0 +1,26 @@
+.popup-recovery__text { margin-bottom: 24px; }
+.popup-recovery__input
+{
+	display: block;
+	margin-bottom: 30px;
+}
+.popup-recovery__btn
+{
+	width: 100%;
+	font-size: 14px;
+}
+.popup-recovery__content
+{
+	&--hide
+	{
+		display: none;
+	}
+}
+.popup-recovery__success
+{
+	color: $light-green;
+	&--hide
+	{
+		display: none;
+	}
+}

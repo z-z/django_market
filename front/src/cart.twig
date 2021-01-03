@@ -1,0 +1,95 @@
+{% extends 'layouts/layout.twig' %}
+{% block page %}
+
+	<div class="cart__wr">
+		<div class="container">
+			{% include 'blocks/breadcrumbs.twig' with vars only %}
+			<h2 class="title">Корзина</h2>
+			<!-- Добавить класс cart__empty--show -->
+			<div class="cart__empty">
+				{% include '../img/svg-for-sprite/ic-cart-empty.svg' %}
+				<div class="cart__empty-big-text">В корзине ничего нет</div>
+				<div class="cart__empty-small-text">
+					Вы можете начать свой выбор с главной страницы, посмотреть акции или воспользоваться поиском.
+				</div>
+				<a href="/" class="simple-button simple-button--empty">На главную</a>
+			</div>
+			<!-- Добавить класс cart__detail--hide -->
+			<div class="cart__detail">
+				<div class="cart__detail-left">
+					<h3 class="title">В корзине <span>3</span> товара</h3>
+					<div class="cart__detail-item">
+						<div class="cart__detail-close" onclick="o2.popups.hideElem(this, 'cart__detail-item')">
+							<svg role="img" class="close-balloon">
+								<use xlink:href="#close-balloon"></use>
+							</svg>
+							<svg role="img" class="ic-close-green">
+								<use xlink:href="#ic-close-green"></use>
+							</svg>
+						</div>
+						<div class="cart__detail-img">
+							<img src="../img/assets/im-discount-big.png">
+						</div>
+						<div class="cart__detail-qn">
+							<div>
+								<div class="cart__detail-text">Кальцемин адванс таб. п.о №120</div>
+								<div class="cart__detail-count">
+									<div class="cart__detail-count-minus" onclick="o2.cartCount(this)">
+										<span></span>
+									</div>
+									<div class="cart__detail-count-number">
+										1
+									</div>
+									<div class="cart__detail-count-plus" onclick="o2.cartCount(this)">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="cart__detail-price"><span>68,88</span> ₽</div>
+								<div class="cart__detail-price-one"><span>125,5</span> ₽ / шт.</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart__detail-item">
+						<div class="cart__detail-close" onclick="o2.popups.hideElem(this, 'cart__detail-item')">
+							<svg role="img" class="close-balloon">
+								<use xlink:href="#close-balloon"></use>
+							</svg>
+							<svg role="img" class="ic-close-green">
+								<use xlink:href="#ic-close-green"></use>
+							</svg>
+						</div>
+						<div class="cart__detail-img">
+							<img src="../img/assets/im-discount-big.png">
+						</div>
+						<div class="cart__detail-qn">
+							<div>
+								<div class="cart__detail-text">Кальцемин адванс таб. п.о №120</div>
+								<div class="cart__detail-count">
+									<div class="cart__detail-count-minus" onclick="o2.cartCount(this)">
+										<span></span>
+									</div>
+									<div class="cart__detail-count-number">
+										1
+									</div>
+									<div class="cart__detail-count-plus" onclick="o2.cartCount(this)">
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div class="cart__detail-price"><span>125,5</span> ₽</div>
+								<div class="cart__detail-price-one"><span>125,5</span> ₽ / шт.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart__detail--right">{% include 'blocks/checkout-summary.twig' %}</div>
+			</div>
+			{% include "./blocks/products-carousel.twig" with { "title":"С этими товарами покупают", "carouselType": "common", "classList":"products-carousel"} %}
+		</div>
+	</div>
+{% endblock %}

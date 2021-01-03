@@ -1,0 +1,25 @@
+{% extends "layout.twig" %}
+{% block page %}
+
+<div class="container">
+	<div class="empty__layout">
+		{% block empty %}{% endblock %}
+		<div class="empty__wrapper">
+			<div class="empty__img">	
+				<svg role="img" class="{{ emptyImg }}">
+					<use xlink:href="#{{ emptyImg }}"></use>
+				</svg>
+			</div>
+			<div class="empty__title">
+				{{ emptyTitle }}
+			</div>
+			<div class="empty__descr">
+				{{ emptyDescr }}
+			</div>
+			<a href="#" class="simple-button simple-button--empty">На главную</a>
+		</div>
+		{% include "../blocks/products-carousel.twig" with { "title": emptyTitleCarousel, "carouselType": carouselType, "classList":"products-carousel"} %}
+	</div>
+</div>
+
+{% endblock page %}

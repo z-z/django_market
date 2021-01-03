@@ -1,0 +1,49 @@
+.wholesale__title
+{
+	font-size: 18px;
+	font-weight: $bold-font;
+	line-height: normal;
+	margin-bottom: 24px;
+}
+.wholesale__info
+{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 24px;
+}
+.wholesale__cards-title
+{
+	font-weight: $bold-font;
+	margin-bottom: 16px;
+}
+.wholesale__contacts
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+
+	svg
+	{
+		margin-right: 16px;
+		width: 24px;
+		height: 24px;
+		fill: $grey;
+	}
+}
+.wholesale__phone-text
+{
+	font-weight: $bold-font;
+	color: $cblack;
+}
+.wholesale__email-text
+{
+	font-weight: 500;
+	color: $cblack;
+}
+@media(max-width: $mobile-sm)
+{
+	.wholesale__title
+	{
+		display: none;
+	}
+}

@@ -1,0 +1,14 @@
+{# index.twig #}
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="container">
+		{% include "blocks/main-slider.twig" %}
+		{% include "./blocks/products-carousel.twig" with { "title":"Популярные товары", "carouselType": "common", "classList":"products-carousel"} %}
+		{% include "blocks/discounts-panel.twig" %}
+		{% include "./blocks/products-carousel.twig" with { "title":"Актуально в эту погоду", "carouselType": "common", "classList":"products-carousel"} %}
+		{% include "./blocks/products-carousel.twig" with { "title":"Вы смотрели", "carouselType": "small", "classList":"products-carousel_small" } %}
+		{% include "cblocks/banners.twig" %}
+		{% include "blocks/simple-slider.twig" with {'image':'<svg role="img" class="logo-instagram"><use xlink:href="#logo-instagram"></use></svg>', 'titleText': 'Мы в'}%}
+		{% include "blocks/news-slider.twig" %}
+	</div>
+{% endblock %}

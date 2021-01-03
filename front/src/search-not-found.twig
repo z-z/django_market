@@ -1,0 +1,11 @@
+{% extends "./layouts/empty.twig" %}
+{% set emptyImg = "ic-search-not-found" %}
+{% set emptyTitle = "Ничего не нашлось" %}
+{% set emptyDescr = "Попробуйте написать название товара по-другому или сократить запрос." %}
+{% set emptyTitleCarousel = "Вам может понравится" %}
+{% set carouselType = "common" %}
+
+{% block empty %}
+	{% include "blocks/breadcrumbs.twig" %}
+	<h2 class="title">Найдено 0 товаров</h2>
+{% endblock empty %}

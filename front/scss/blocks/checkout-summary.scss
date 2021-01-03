@@ -1,0 +1,127 @@
+.checkout-summary__wr{position: relative;}
+.checkout-summary
+{
+	width: 340px;
+	padding: 24px 20px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	justify-self: end;
+	height: max-content;
+	position: absolute;
+	right: 0;
+}
+.checkout-summary__line
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+.checkout-summary__line--hide{display: none;}
+
+.checkout-summary__line--promo
+{
+	.g-input
+	{
+		margin-right: 4px;
+		width: 173px;
+	}
+}
+.checkout-summary__line--total
+{
+	font-weight: $bold-font;
+	margin-bottom: 0;
+}
+.checkout-summary__item
+{
+	border-bottom: 1px solid $light-grey;
+	&:not(:last-of-type)
+	{
+		margin-bottom: 13px;
+	}
+	&:first-child
+	{
+		a
+		{
+			color: $light-green;
+			font-size: 16px;
+		}
+		span
+		{
+			font-size: 18px;
+			font-weight: $bold-font;
+		}
+	}
+	&:nth-child(2)
+	{
+		margin-bottom: 16px;
+		.checkout-summary__line
+		{
+			&:first-child
+			{
+				span{&:first-child{color:$dark-grey;}}
+			}
+			&:nth-child(2)
+			{
+				span
+				{
+					&:first-child{color: $dark-grey;}
+					&:last-child{color: $green;}
+				}
+			}
+			&:last-child span
+			{
+				&:first-child{color:$dark-grey;}
+			}
+		}
+	}
+	&:last-of-type
+	{
+		font-weight: $bold-font;
+		border: none;
+	}
+}
+.button--checkout-summary
+{
+	width: 100%;
+	height: 40px;
+	display: none;
+	margin-top: 18px;
+}
+.order-register__wr .checkout-summary__item--total
+{
+	border: none;
+	padding-bottom: 0;
+}
+.checkout-summary__line--promo{display: none;}
+@media (max-width: 930px)
+{
+	.checkout-summary__wr
+	{
+		justify-self: auto;
+		margin-bottom: 32px;
+		grid-row: 5/6;
+	}
+	.checkout-summary{position: static;}
+}
+@media (max-width: $mobile-sm)
+{
+	.checkout-summary
+	{
+		width: 100%;
+		justify-self: auto;
+	}
+	.checkout-summary__line--promo
+	{
+		&>div:first-child
+		{
+			width: 100%;
+			margin-right: 4px;
+		}
+		.g-input{width: 100%;}
+	}
+
+}
+@media(max-width: $mobile-xs)
+{
+	.checkout-summary__line--promo .g-input{width: 121px;}
+}

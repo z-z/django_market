@@ -1,0 +1,34 @@
+
+{% extends "./layouts/layout.twig" %}
+
+{% block page %}
+	<div class="container">
+		{% include "blocks/breadcrumbs.twig" %}
+		<h2 class="catalog__title">Каталог</h2>
+		<div class="catalog__wr">
+			<div class="catalog__left">
+				{% include "./blocks/sidebar-menu.twig" %}
+			</div>
+			<div class="catalog__right">
+				{% include "./blocks/main-slider-item.twig" %}
+				<div class="catalog__catigories-btn" onclick="o2.popups.mainCatalogMenuShow()">
+					<div class="catalog__catigories-btn-right">
+						<svg role="img" class="ic-catalog">
+							<use xlink:href="#ic-catalog"></use>
+						</svg>
+						Список категорий
+					</div>
+					<svg role="img" class="ic-right-catalog">
+						<use xlink:href="#ic-right-catalog"></use>
+					</svg>
+					<div class="devider devider_main-catalog"></div>
+				</div>
+				{% include "blocks/products-carousel.twig" with { "title":"С большой скидкой", "carouselType": "common", "classList":"catalog-carousel"} %}
+				{% include "./blocks/products-carousel.twig" with { "title":"Лекарственные средства", "classList":"catalog-carousel_small" } %}
+				{% include "./blocks/products-carousel.twig" with { "title":"Линзы, очки, аксессуары", "classList":"catalog-carousel_small" } %}
+				{% include "./blocks/products-carousel.twig" with { "title":"Витамины, БАДы и пищевые добавки", "classList":"catalog-carousel_small" } %}
+				<button class="simple-button simple-button_catalog">Показать ещё</button>
+			</div>
+		</div>
+	</div>
+{% endblock %}

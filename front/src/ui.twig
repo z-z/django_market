@@ -1,0 +1,55 @@
+{# index.twig #}
+{% extends "layouts/layout.twig" %}
+
+{% block page %}
+	<div class="container">
+		<h3>Чекбоксы</h3>
+		<label class="g-checkbox">
+			<input type="checkbox" class="g-checkbox__input" checked>
+			<div class="g-checkbox__body">
+				<span class="g-checkbox__box"></span>
+				<span class="g-checkbox__text">Checkbox Label</span>
+			</div>
+		</label>
+		<br>
+		<label class="g-checkbox">
+			<input type="checkbox" class="g-checkbox__input" disabled checked>
+			<div class="g-checkbox__body">
+				<span class="g-checkbox__box"></span>
+				<span class="g-checkbox__text">Checkbox Label</span>
+			</div>
+		</label>
+		<br>
+		<h3>Радиобаттоны</h3>
+		<label class="g-radio">
+			<input type="radio" name="boom1" class="g-radio__input"  >
+			<div class="g-radio__body">
+				<span class="g-radio__box"></span>
+				<span class="g-radio__text">Radio Label</span>
+			</div>
+		</label>
+		<br/>
+		<label class="g-radio">
+			<input type="radio" name="boom1" class="g-radio__input"  >
+			<div class="g-radio__body">
+				<span class="g-radio__box"></span>
+				<span class="g-radio__text">Radio Label</span>
+			</div>
+		</label>
+		<br/>
+		<label class="g-radio">
+			<input type="radio" name="boom1" class="g-radio__input"  >
+			<div class="g-radio__body">
+				<span class="g-radio__box"></span>
+				<span class="g-radio__text">Radio Label</span>
+			</div>
+		</label>
+		<br><br>
+
+		<button onclick="o2.popups.showPopup('.popup-confirm');" class="g-primary-button">
+			Пример попапа
+		</button>
+		{% include "./blocks/popup-confirm.twig" %}
+	</div>
+	<br/>
+{% endblock %}

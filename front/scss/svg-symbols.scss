@@ -1,0 +1,779 @@
+
+$icon-close-balloon-width: 16px;
+$icon-close-balloon-height: 16px;
+$icon-close-mobile-width: 24px;
+$icon-close-mobile-height: 24px;
+$icon-close-popup-width: 16px;
+$icon-close-popup-height: 16px;
+$icon-header-promo-copy-width: 320px;
+$icon-header-promo-copy-height: 48px;
+$icon-header-promo-width: 1200px;
+$icon-header-promo-height: 32px;
+$icon-help-truck-width: 32px;
+$icon-help-truck-height: 32px;
+$icon-ic-attention-line-width: 70px;
+$icon-ic-attention-line-height: 70px;
+$icon-ic-black-favorites-width: 24px;
+$icon-ic-black-favorites-height: 24px;
+$icon-ic-box-grey-width: 20px;
+$icon-ic-box-grey-height: 20px;
+$icon-ic-box-width: 20px;
+$icon-ic-box-height: 20px;
+$icon-ic-button-trash-width: 20px;
+$icon-ic-button-trash-height: 20px;
+$icon-ic-calendar-width: 20px;
+$icon-ic-calendar-height: 20px;
+$icon-ic-cart-account-width: 24px;
+$icon-ic-cart-account-height: 24px;
+$icon-ic-cart-empty-width: 70px;
+$icon-ic-cart-empty-height: 70px;
+$icon-ic-cart-reg-width: 24px;
+$icon-ic-cart-reg-height: 24px;
+$icon-ic-cart-width: 24px;
+$icon-ic-cart-height: 24px;
+$icon-ic-catalog-width: 24px;
+$icon-ic-catalog-height: 24px;
+$icon-ic-check-width: 16px;
+$icon-ic-check-height: 16px;
+$icon-ic-close-green-width: 16px;
+$icon-ic-close-green-height: 16px;
+$icon-ic-close-input-width: 24px;
+$icon-ic-close-input-height: 24px;
+$icon-ic-close-width: 21px;
+$icon-ic-close-height: 20px;
+$icon-ic-down-arrow-none-width: 17px;
+$icon-ic-down-arrow-none-height: 17px;
+$icon-ic-down-arrow-kopiya-width: 17px;
+$icon-ic-down-arrow-kopiya-height: 17px;
+$icon-ic-down-fill-width: 24px;
+$icon-ic-down-fill-height: 24px;
+$icon-ic-down-width: 21px;
+$icon-ic-down-height: 20px;
+$icon-ic-facebook-width: 24px;
+$icon-ic-facebook-height: 24px;
+$icon-ic-favorites-empty-width: 70px;
+$icon-ic-favorites-empty-height: 70px;
+$icon-ic-favorites-fill-width: 24px;
+$icon-ic-favorites-fill-height: 24px;
+$icon-ic-favorites-gray-width: 70px;
+$icon-ic-favorites-gray-height: 70px;
+$icon-ic-favorites-red-width: 24px;
+$icon-ic-favorites-red-height: 24px;
+$icon-ic-favorites-width: 24px;
+$icon-ic-favorites-height: 24px;
+$icon-ic-fb-white-width: 24px;
+$icon-ic-fb-white-height: 24px;
+$icon-ic-filter-width: 24px;
+$icon-ic-filter-height: 24px;
+$icon-ic-heck-menu-width: 17px;
+$icon-ic-heck-menu-height: 17px;
+$icon-ic-info-width: 20px;
+$icon-ic-info-height: 20px;
+$icon-ic-inst-width: 512px;
+$icon-ic-inst-height: 512px;
+$icon-ic-instagram-width: 24px;
+$icon-ic-instagram-height: 24px;
+$icon-ic-left-arrow-width: 24px;
+$icon-ic-left-arrow-height: 24px;
+$icon-ic-legalinfo-menu-width: 24px;
+$icon-ic-legalinfo-menu-height: 24px;
+$icon-ic-list-width: 24px;
+$icon-ic-list-height: 24px;
+$icon-ic-location-order-width: 20px;
+$icon-ic-location-order-height: 20px;
+$icon-ic-location-width: 20px;
+$icon-ic-location-height: 20px;
+$icon-ic-mail-order-none-width: 20px;
+$icon-ic-mail-order-none-height: 20px;
+$icon-ic-mail-order-width: 20px;
+$icon-ic-mail-order-height: 20px;
+$icon-ic-mail-width: 24px;
+$icon-ic-mail-height: 24px;
+$icon-ic-menu-width: 24px;
+$icon-ic-menu-height: 24px;
+$icon-ic-minus-width: 17px;
+$icon-ic-minus-height: 17px;
+$icon-ic-news-width: 20px;
+$icon-ic-news-height: 20px;
+$icon-ic-notfound-width: 70px;
+$icon-ic-notfound-height: 70px;
+$icon-ic-payment-menu-width: 24px;
+$icon-ic-payment-menu-height: 24px;
+$icon-ic-phone-order-none-width: 20px;
+$icon-ic-phone-order-none-height: 20px;
+$icon-ic-phone-order-width: 20px;
+$icon-ic-phone-order-height: 20px;
+$icon-ic-phone-width: 24px;
+$icon-ic-phone-height: 24px;
+$icon-ic-place-width: 32px;
+$icon-ic-place-height: 32px;
+$icon-ic-plus-width: 17px;
+$icon-ic-plus-height: 17px;
+$icon-ic-purveyor-menu-width: 24px;
+$icon-ic-purveyor-menu-height: 24px;
+$icon-ic-quote-width: 26px;
+$icon-ic-quote-height: 26px;
+$icon-ic-refund-menu-width: 24px;
+$icon-ic-refund-menu-height: 24px;
+$icon-ic-right-arrow-width: 24px;
+$icon-ic-right-arrow-height: 24px;
+$icon-ic-right-catalog-width: 24px;
+$icon-ic-right-catalog-height: 24px;
+$icon-ic-search-active-width: 24px;
+$icon-ic-search-active-height: 24px;
+$icon-ic-search-not-found-width: 70px;
+$icon-ic-search-not-found-height: 70px;
+$icon-ic-search-width: 24px;
+$icon-ic-search-height: 24px;
+$icon-ic-security-account-width: 24px;
+$icon-ic-security-account-height: 24px;
+$icon-ic-security-reg-width: 24px;
+$icon-ic-security-reg-height: 24px;
+$icon-ic-sort-down-width: 20px;
+$icon-ic-sort-down-height: 20px;
+$icon-ic-sort-up-width: 20px;
+$icon-ic-sort-up-height: 20px;
+$icon-ic-star-fill-width: 16px;
+$icon-ic-star-fill-height: 16px;
+$icon-ic-star-width: 16px;
+$icon-ic-star-height: 16px;
+$icon-ic-stock-width: 20px;
+$icon-ic-stock-height: 20px;
+$icon-ic-store-contacts-width: 20px;
+$icon-ic-store-contacts-height: 20px;
+$icon-ic-store-delivery-width: 20px;
+$icon-ic-store-delivery-height: 20px;
+$icon-ic-store-width: 20px;
+$icon-ic-store-height: 20px;
+$icon-ic-support-mobile-width: 24px;
+$icon-ic-support-mobile-height: 24px;
+$icon-ic-support-width: 24px;
+$icon-ic-support-height: 24px;
+$icon-ic-time-news-width: 16px;
+$icon-ic-time-news-height: 16px;
+$icon-ic-time-order-width: 20px;
+$icon-ic-time-order-height: 20px;
+$icon-ic-time-width: 16px;
+$icon-ic-time-height: 16px;
+$icon-ic-trash-width: 20px;
+$icon-ic-trash-height: 20px;
+$icon-ic-triangles-down-width: 20px;
+$icon-ic-triangles-down-height: 20px;
+$icon-ic-truck-detail-width: 20px;
+$icon-ic-truck-detail-height: 20px;
+$icon-ic-truck-order-width: 20px;
+$icon-ic-truck-order-height: 20px;
+$icon-ic-truck-width: 32px;
+$icon-ic-truck-height: 32px;
+$icon-ic-up-arrow-bl-width: 24px;
+$icon-ic-up-arrow-bl-height: 24px;
+$icon-ic-up-arrow-width: 17px;
+$icon-ic-up-arrow-height: 17px;
+$icon-ic-up-catalog-width: 17px;
+$icon-ic-up-catalog-height: 17px;
+$icon-ic-user-action-width: 24px;
+$icon-ic-user-action-height: 24px;
+$icon-ic-user-order-width: 20px;
+$icon-ic-user-order-height: 20px;
+$icon-ic-user-reg-width: 24px;
+$icon-ic-user-reg-height: 24px;
+$icon-ic-user-width: 20px;
+$icon-ic-user-height: 20px;
+$icon-ic-vk-white-width: 24px;
+$icon-ic-vk-white-height: 24px;
+$icon-ic-vk-width: 24px;
+$icon-ic-vk-height: 24px;
+$icon-ic-wholesale-menu-width: 24px;
+$icon-ic-wholesale-menu-height: 24px;
+$icon-left-arrow-hover-width: 24px;
+$icon-left-arrow-hover-height: 24px;
+$icon-left-hover-width: 40px;
+$icon-left-hover-height: 40px;
+$icon-left-normal-width: 32px;
+$icon-left-normal-height: 32px;
+$icon-logo-gelios-horizontal-width: 174px;
+$icon-logo-gelios-horizontal-height: 32px;
+$icon-logo-gelios-mark-width: 32px;
+$icon-logo-gelios-mark-height: 32px;
+$icon-logo-instagram-width: 141px;
+$icon-logo-instagram-height: 40px;
+$icon-logo-mc-width: 51px;
+$icon-logo-mc-height: 24px;
+$icon-logo-mir-width: 59px;
+$icon-logo-mir-height: 24px;
+$icon-logo-visa-width: 52px;
+$icon-logo-visa-height: 24px;
+$icon-mask-width: 1200px;
+$icon-mask-height: 235px;
+$icon-point-big-width: 63px;
+$icon-point-big-height: 62px;
+$icon-point-width: 28px;
+$icon-point-height: 28px;
+$icon-right-arrow-hover-fn-width: 25px;
+$icon-right-arrow-hover-fn-height: 24px;
+$icon-right-arrow-hover-width: 25px;
+$icon-right-arrow-hover-height: 24px;
+$icon-right-hover-width: 40px;
+$icon-right-hover-height: 40px;
+$icon-right-normal-width: 32px;
+$icon-right-normal-height: 32px;
+$icon-search-mobile-fn-width: 24px;
+$icon-search-mobile-fn-height: 24px;
+$icon-search-mobile-width: 24px;
+$icon-search-mobile-height: 24px;
+
+.close-balloon {
+  width: $icon-close-balloon-width;
+  height: $icon-close-balloon-height;
+}
+
+.close-mobile {
+  width: $icon-close-mobile-width;
+  height: $icon-close-mobile-height;
+}
+
+.close-popup {
+  width: $icon-close-popup-width;
+  height: $icon-close-popup-height;
+}
+
+.header-promo-copy {
+  width: $icon-header-promo-copy-width;
+  height: $icon-header-promo-copy-height;
+}
+
+.header-promo {
+  width: $icon-header-promo-width;
+  height: $icon-header-promo-height;
+}
+
+.help-truck {
+  width: $icon-help-truck-width;
+  height: $icon-help-truck-height;
+}
+
+.ic-attention-line {
+  width: $icon-ic-attention-line-width;
+  height: $icon-ic-attention-line-height;
+}
+
+.ic-black-favorites {
+  width: $icon-ic-black-favorites-width;
+  height: $icon-ic-black-favorites-height;
+}
+
+.ic-box-grey {
+  width: $icon-ic-box-grey-width;
+  height: $icon-ic-box-grey-height;
+}
+
+.ic-box {
+  width: $icon-ic-box-width;
+  height: $icon-ic-box-height;
+}
+
+.ic-button-trash {
+  width: $icon-ic-button-trash-width;
+  height: $icon-ic-button-trash-height;
+}
+
+.ic-calendar {
+  width: $icon-ic-calendar-width;
+  height: $icon-ic-calendar-height;
+}
+
+.ic-cart-account {
+  width: $icon-ic-cart-account-width;
+  height: $icon-ic-cart-account-height;
+}
+
+.ic-cart-empty {
+  width: $icon-ic-cart-empty-width;
+  height: $icon-ic-cart-empty-height;
+}
+
+.ic-cart-reg {
+  width: $icon-ic-cart-reg-width;
+  height: $icon-ic-cart-reg-height;
+}
+
+.ic-cart {
+  width: $icon-ic-cart-width;
+  height: $icon-ic-cart-height;
+}
+
+.ic-catalog {
+  width: $icon-ic-catalog-width;
+  height: $icon-ic-catalog-height;
+}
+
+.ic-check {
+  width: $icon-ic-check-width;
+  height: $icon-ic-check-height;
+}
+
+.ic-close-green {
+  width: $icon-ic-close-green-width;
+  height: $icon-ic-close-green-height;
+}
+
+.ic-close-input {
+  width: $icon-ic-close-input-width;
+  height: $icon-ic-close-input-height;
+}
+
+.ic-close {
+  width: $icon-ic-close-width;
+  height: $icon-ic-close-height;
+}
+
+.ic-down-arrow-none {
+  width: $icon-ic-down-arrow-none-width;
+  height: $icon-ic-down-arrow-none-height;
+}
+
+.ic-down-arrow-kopiya {
+  width: $icon-ic-down-arrow-kopiya-width;
+  height: $icon-ic-down-arrow-kopiya-height;
+}
+
+.ic-down-fill {
+  width: $icon-ic-down-fill-width;
+  height: $icon-ic-down-fill-height;
+}
+
+.ic-down {
+  width: $icon-ic-down-width;
+  height: $icon-ic-down-height;
+}
+
+.ic-facebook {
+  width: $icon-ic-facebook-width;
+  height: $icon-ic-facebook-height;
+}
+
+.ic-favorites-empty {
+  width: $icon-ic-favorites-empty-width;
+  height: $icon-ic-favorites-empty-height;
+}
+
+.ic-favorites-fill {
+  width: $icon-ic-favorites-fill-width;
+  height: $icon-ic-favorites-fill-height;
+}
+
+.ic-favorites-gray {
+  width: $icon-ic-favorites-gray-width;
+  height: $icon-ic-favorites-gray-height;
+}
+
+.ic-favorites-red {
+  width: $icon-ic-favorites-red-width;
+  height: $icon-ic-favorites-red-height;
+}
+
+.ic-favorites {
+  width: $icon-ic-favorites-width;
+  height: $icon-ic-favorites-height;
+}
+
+.ic-fb-white {
+  width: $icon-ic-fb-white-width;
+  height: $icon-ic-fb-white-height;
+}
+
+.ic-filter {
+  width: $icon-ic-filter-width;
+  height: $icon-ic-filter-height;
+}
+
+.ic-heck-menu {
+  width: $icon-ic-heck-menu-width;
+  height: $icon-ic-heck-menu-height;
+}
+
+.ic-info {
+  width: $icon-ic-info-width;
+  height: $icon-ic-info-height;
+}
+
+.ic-inst {
+  width: $icon-ic-inst-width;
+  height: $icon-ic-inst-height;
+}
+
+.ic-instagram {
+  width: $icon-ic-instagram-width;
+  height: $icon-ic-instagram-height;
+}
+
+.ic-left-arrow {
+  width: $icon-ic-left-arrow-width;
+  height: $icon-ic-left-arrow-height;
+}
+
+.ic-legalinfo-menu {
+  width: $icon-ic-legalinfo-menu-width;
+  height: $icon-ic-legalinfo-menu-height;
+}
+
+.ic-list {
+  width: $icon-ic-list-width;
+  height: $icon-ic-list-height;
+}
+
+.ic-location-order {
+  width: $icon-ic-location-order-width;
+  height: $icon-ic-location-order-height;
+}
+
+.ic-location {
+  width: $icon-ic-location-width;
+  height: $icon-ic-location-height;
+}
+
+.ic-mail-order-none {
+  width: $icon-ic-mail-order-none-width;
+  height: $icon-ic-mail-order-none-height;
+}
+
+.ic-mail-order {
+  width: $icon-ic-mail-order-width;
+  height: $icon-ic-mail-order-height;
+}
+
+.ic-mail {
+  width: $icon-ic-mail-width;
+  height: $icon-ic-mail-height;
+}
+
+.ic-menu {
+  width: $icon-ic-menu-width;
+  height: $icon-ic-menu-height;
+}
+
+.ic-minus {
+  width: $icon-ic-minus-width;
+  height: $icon-ic-minus-height;
+}
+
+.ic-news {
+  width: $icon-ic-news-width;
+  height: $icon-ic-news-height;
+}
+
+.ic-notfound {
+  width: $icon-ic-notfound-width;
+  height: $icon-ic-notfound-height;
+}
+
+.ic-payment-menu {
+  width: $icon-ic-payment-menu-width;
+  height: $icon-ic-payment-menu-height;
+}
+
+.ic-phone-order-none {
+  width: $icon-ic-phone-order-none-width;
+  height: $icon-ic-phone-order-none-height;
+}
+
+.ic-phone-order {
+  width: $icon-ic-phone-order-width;
+  height: $icon-ic-phone-order-height;
+}
+
+.ic-phone {
+  width: $icon-ic-phone-width;
+  height: $icon-ic-phone-height;
+}
+
+.ic-place {
+  width: $icon-ic-place-width;
+  height: $icon-ic-place-height;
+}
+
+.ic-plus {
+  width: $icon-ic-plus-width;
+  height: $icon-ic-plus-height;
+}
+
+.ic-purveyor-menu {
+  width: $icon-ic-purveyor-menu-width;
+  height: $icon-ic-purveyor-menu-height;
+}
+
+.ic-quote {
+  width: $icon-ic-quote-width;
+  height: $icon-ic-quote-height;
+}
+
+.ic-refund-menu {
+  width: $icon-ic-refund-menu-width;
+  height: $icon-ic-refund-menu-height;
+}
+
+.ic-right-arrow {
+  width: $icon-ic-right-arrow-width;
+  height: $icon-ic-right-arrow-height;
+}
+
+.ic-right-catalog {
+  width: $icon-ic-right-catalog-width;
+  height: $icon-ic-right-catalog-height;
+}
+
+.ic-search-active {
+  width: $icon-ic-search-active-width;
+  height: $icon-ic-search-active-height;
+}
+
+.ic-search-not-found {
+  width: $icon-ic-search-not-found-width;
+  height: $icon-ic-search-not-found-height;
+}
+
+.ic-search {
+  width: $icon-ic-search-width;
+  height: $icon-ic-search-height;
+}
+
+.ic-security-account {
+  width: $icon-ic-security-account-width;
+  height: $icon-ic-security-account-height;
+}
+
+.ic-security-reg {
+  width: $icon-ic-security-reg-width;
+  height: $icon-ic-security-reg-height;
+}
+
+.ic-sort-down {
+  width: $icon-ic-sort-down-width;
+  height: $icon-ic-sort-down-height;
+}
+
+.ic-sort-up {
+  width: $icon-ic-sort-up-width;
+  height: $icon-ic-sort-up-height;
+}
+
+.ic-star-fill {
+  width: $icon-ic-star-fill-width;
+  height: $icon-ic-star-fill-height;
+}
+
+.ic-star {
+  width: $icon-ic-star-width;
+  height: $icon-ic-star-height;
+}
+
+.ic-stock {
+  width: $icon-ic-stock-width;
+  height: $icon-ic-stock-height;
+}
+
+.ic-store-contacts {
+  width: $icon-ic-store-contacts-width;
+  height: $icon-ic-store-contacts-height;
+}
+
+.ic-store-delivery {
+  width: $icon-ic-store-delivery-width;
+  height: $icon-ic-store-delivery-height;
+}
+
+.ic-store {
+  width: $icon-ic-store-width;
+  height: $icon-ic-store-height;
+}
+
+.ic-support-mobile {
+  width: $icon-ic-support-mobile-width;
+  height: $icon-ic-support-mobile-height;
+}
+
+.ic-support {
+  width: $icon-ic-support-width;
+  height: $icon-ic-support-height;
+}
+
+.ic-time-news {
+  width: $icon-ic-time-news-width;
+  height: $icon-ic-time-news-height;
+}
+
+.ic-time-order {
+  width: $icon-ic-time-order-width;
+  height: $icon-ic-time-order-height;
+}
+
+.ic-time {
+  width: $icon-ic-time-width;
+  height: $icon-ic-time-height;
+}
+
+.ic-trash {
+  width: $icon-ic-trash-width;
+  height: $icon-ic-trash-height;
+}
+
+.ic-triangles-down {
+  width: $icon-ic-triangles-down-width;
+  height: $icon-ic-triangles-down-height;
+}
+
+.ic-truck-detail {
+  width: $icon-ic-truck-detail-width;
+  height: $icon-ic-truck-detail-height;
+}
+
+.ic-truck-order {
+  width: $icon-ic-truck-order-width;
+  height: $icon-ic-truck-order-height;
+}
+
+.ic-truck {
+  width: $icon-ic-truck-width;
+  height: $icon-ic-truck-height;
+}
+
+.ic-up-arrow-bl {
+  width: $icon-ic-up-arrow-bl-width;
+  height: $icon-ic-up-arrow-bl-height;
+}
+
+.ic-up-arrow {
+  width: $icon-ic-up-arrow-width;
+  height: $icon-ic-up-arrow-height;
+}
+
+.ic-up-catalog {
+  width: $icon-ic-up-catalog-width;
+  height: $icon-ic-up-catalog-height;
+}
+
+.ic-user-action {
+  width: $icon-ic-user-action-width;
+  height: $icon-ic-user-action-height;
+}
+
+.ic-user-order {
+  width: $icon-ic-user-order-width;
+  height: $icon-ic-user-order-height;
+}
+
+.ic-user-reg {
+  width: $icon-ic-user-reg-width;
+  height: $icon-ic-user-reg-height;
+}
+
+.ic-user {
+  width: $icon-ic-user-width;
+  height: $icon-ic-user-height;
+}
+
+.ic-vk-white {
+  width: $icon-ic-vk-white-width;
+  height: $icon-ic-vk-white-height;
+}
+
+.ic-vk {
+  width: $icon-ic-vk-width;
+  height: $icon-ic-vk-height;
+}
+
+.ic-wholesale-menu {
+  width: $icon-ic-wholesale-menu-width;
+  height: $icon-ic-wholesale-menu-height;
+}
+
+.left-arrow-hover {
+  width: $icon-left-arrow-hover-width;
+  height: $icon-left-arrow-hover-height;
+}
+
+.left-hover {
+  width: $icon-left-hover-width;
+  height: $icon-left-hover-height;
+}
+
+.left-normal {
+  width: $icon-left-normal-width;
+  height: $icon-left-normal-height;
+}
+
+.logo-gelios-horizontal {
+  width: $icon-logo-gelios-horizontal-width;
+  height: $icon-logo-gelios-horizontal-height;
+}
+
+.logo-gelios-mark {
+  width: $icon-logo-gelios-mark-width;
+  height: $icon-logo-gelios-mark-height;
+}
+
+.logo-instagram {
+  width: $icon-logo-instagram-width;
+  height: $icon-logo-instagram-height;
+}
+
+.logo-mc {
+  width: $icon-logo-mc-width;
+  height: $icon-logo-mc-height;
+}
+
+.logo-mir {
+  width: $icon-logo-mir-width;
+  height: $icon-logo-mir-height;
+}
+
+.logo-visa {
+  width: $icon-logo-visa-width;
+  height: $icon-logo-visa-height;
+}
+
+.mask {
+  width: $icon-mask-width;
+  height: $icon-mask-height;
+}
+
+.point-big {
+  width: $icon-point-big-width;
+  height: $icon-point-big-height;
+}
+
+.point {
+  width: $icon-point-width;
+  height: $icon-point-height;
+}
+
+.right-arrow-hover-fn {
+  width: $icon-right-arrow-hover-fn-width;
+  height: $icon-right-arrow-hover-fn-height;
+}
+
+.right-arrow-hover {
+  width: $icon-right-arrow-hover-width;
+  height: $icon-right-arrow-hover-height;
+}
+
+.right-hover {
+  width: $icon-right-hover-width;
+  height: $icon-right-hover-height;
+}
+
+.right-normal {
+  width: $icon-right-normal-width;
+  height: $icon-right-normal-height;
+}
+
+.search-mobile-fn {
+  width: $icon-search-mobile-fn-width;
+  height: $icon-search-mobile-fn-height;
+}
+
+.search-mobile {
+  width: $icon-search-mobile-width;
+  height: $icon-search-mobile-height;
+}
+

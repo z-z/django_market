@@ -1,0 +1,137 @@
+.account-orders__list
+{
+	margin-bottom: 18px;
+}
+.account-orders__list-item
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 16px;
+	letter-spacing: 0.1px;
+	&:not(:last-child)
+	{
+	margin-bottom: 16px;
+	border-bottom: 1px solid $light-grey;
+	}
+}
+.account-orders__item-left
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 366px;
+	width: 100%;
+}
+.account-orders__item-right
+{
+	display: flex;
+	justify-content: flex-start;
+	max-width: 300px;
+	width: 100%;
+}
+.account-orders__item-number
+{
+	letter-spacing: 0.3px;
+	max-width: 188px;
+	width: 100%;
+}
+.account-orders__item-date
+{
+	max-width: 145px;
+	width: 100%;
+	text-align: left;
+	color: $dark-grey;
+}
+.account-orders__item-status
+{
+	max-width: 192px;
+	width: 100%;
+	color: $dark-grey;
+}
+.account-orders__item-price
+{
+	max-width: 100px;
+	width: 100%;
+	text-align: left;
+}
+.account-orders__more
+{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: $green;
+	margin-bottom: 81px;
+	svg
+	{
+		margin-left: 8px;
+	}
+
+}
+.ic-down-arrow-kopiya {
+	width: 20px;
+	height: 20px;
+}
+@media(max-width: $tablet)
+{
+	.account__right
+	{
+		margin-left: 16px;
+	}
+}
+@media(max-width: $mobile-sm)
+{
+	.account-orders__list
+	{
+		margin-bottom: 10px;
+	}
+	.account-orders__list-item
+	{
+		flex-wrap: wrap;
+	}
+	.account-orders__item-left
+	{
+		flex-direction: column;
+		max-width: 140px;
+		margin-bottom: 16px;
+	}
+	.account-orders__item-right
+	{
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		max-width: 140px;
+		margin-bottom: 16px;
+	}
+	.account-orders__item-more
+	{
+		width: 100%;
+	}
+	.account-orders__item-number
+	{
+		max-width: 188px;
+		width: 100%;
+		margin-bottom: 14px;
+	}
+	.account-orders__item-date
+	{
+		max-width: 145px;
+		width: 100%;
+	}
+	.account-orders__item-status
+	{
+		max-width: 192px;
+		width: 100%;
+		text-align: right;
+	}
+	.account-orders__item-price
+	{
+		max-width: 100px;
+		width: 100%;
+		margin-bottom: 14px;
+		text-align: right;
+	}
+	.account-orders__more
+	{
+		margin-bottom: 41px;
+	}
+}

@@ -1,0 +1,40 @@
+{% extends "layout.twig" %}
+{% block page %}
+<div class="container">
+	{% include "../blocks/breadcrumbs.twig" %}
+	<h2 class="title title--account">Личный кабинет</h2>
+	<div class="account__wrapper">
+		<div class="account__left">
+			<ul class="account__nav">
+				<li class="account__nav-item account__nav-item--active">
+					<a href="#">
+						<svg role="img" class="ic-user-action">
+							<use xlink:href="#ic-user-action"></use>
+						</svg>
+						<div class="account__nav-name">Мои данные</div>
+					</a>
+				</li>
+				<li class="account__nav-item">
+					<a href="#">
+						<svg role="img" class="ic-cart-account">
+							<use xlink:href="#ic-cart-account"></use>
+						</svg>
+						<div class="account__nav-name">Мои заказы</div>
+					</a>
+				</li>
+				<li class="account__nav-item">
+					<a href="#">
+						<svg role="img" class="ic-security-account">
+							<use xlink:href="#ic-security-account"></use>
+						</svg>
+						<div class="account__nav-name">Безопасность</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="account__right">
+			{% block account %}{% endblock %}
+		</div>
+	</div>
+</div>
+{% endblock page %}

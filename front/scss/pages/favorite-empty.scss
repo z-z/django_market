@@ -1,0 +1,17 @@
+.favorites__head
+{
+	display: flex;
+	justify-content: space-between;
+}
+.simple-button--favorites
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 130px;
+	height: 32px;
+	padding-left: 13px;
+	padding-right: 5px;
+	color: $grey;
+	font-size: 12px;
+}

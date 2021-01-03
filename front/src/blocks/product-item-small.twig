@@ -1,0 +1,38 @@
+<div class="product-item-small product-item_sale _product-rating" data-rating="{{ random(5) }}">
+	<div class="product-item__actions">
+		{# 
+			класс "product-item__action_stick_stock - для товаров, которых нет в наличии;
+			класс "product-item__action_stick_sale - для распродажных товаров;
+		#}
+		{# <div class="product-item__action product-item__action_stick product-item__action_stick_stock">
+			Нет в наличии
+		</div> #}
+		<div class="product-item__action product-item__action_stick product-item__action_stick_sale">
+			Экономия 48%
+		</div>
+		<a href="#" class="product-item__action product-item__action_fav" onclick="o2.productItem.addToFavorite(this, event)">
+				<svg role="img" class="ic-favorites-fill product-item__action_fav_enable">
+					<use xlink:href="#ic-favorites-fill"></use>
+				</svg>
+				<svg role="img" class="ic-favorites-red product-item__action_fav_disable">
+					<use xlink:href="#ic-favorites-red"></use>
+				</svg>
+				<div class="heart">
+				</div>
+		</a>
+	</div>
+	<a href="#" class="product-item-small__img">
+		<picture>
+			<source data-srcset="img/assets/product-small.jpg, img/assets/product-small@2x.jpg 2x">
+			<img data-src="img/assets/product-small.jpg" alt="" class="lazy-image">
+		</picture>
+	</a>
+	<div class="product-item-small__info">
+		<div class="product-item-small__title">Вимакс Супер Форте капс. №30</div>
+		{% include "product-rating.twig" %}
+		<div class="product-item-small__prices">
+			<span class="product-item__current-price product-item-small__current-price">25.820 ₽</span>
+			<span class="product-item__old-price product-item-small__old-price">589 ₽</span>
+		</div>
+	</div>
+</div>

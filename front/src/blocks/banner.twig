@@ -1,0 +1,14 @@
+<div class="banner">
+	<a href="#">
+		<picture>
+			<source data-srcset="img/{{srcmob}} 1x, img/{{srcmob2x}} 2x" media="(max-width: 740px)">
+			<source data-srcset="img/{{srctab}} 1x, img/{{srctab2x}} 2x" media="(max-width: 740px)">
+			<source data-srcset="img/{{src}} 1x, img/{{src2x}} 2x">
+			<img data-src="img/{{src}}" class="lazy-image"alt="">
+		</picture>
+	</a>
+	<div class="banner__text">
+		<h2>{{text}}</h2>
+		<div class="banner__sale">Скидки до -90%</div>
+	</div>
+</div>

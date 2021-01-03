@@ -1,0 +1,134 @@
+.contacts__wr
+{
+	padding-bottom: 80px;
+	margin-top: -8px;
+
+	a.title
+	{
+		display: block;
+		margin-bottom: 32px;
+		font-size: 28px;
+		font-weight: 600;
+		line-height: normal;
+		color: #26323b;
+	}
+}
+
+.contacts__items
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contacts__item-wr
+{
+	position: relative;
+}
+
+.contacts__item
+{
+	display: flex;
+	min-width: 236px;
+	max-width: max-content;
+	padding-bottom: 32px;
+	opacity: .4;
+	transition: .3s all;
+	cursor: pointer;
+}
+
+.contacts__item--op1{opacity: 1}
+
+.contacts__item-content
+{
+	color: $dark-grey;
+
+	a
+	{
+		display: block;
+		color: $dark-grey;
+		transition: .3s all;
+
+		&:hover{color: $green;}
+	}
+}
+
+.contacts__item-wr-top
+{
+	margin-bottom: 16px;
+	&>div:first-child
+	{
+		margin-bottom: 6px;
+	}
+}
+
+.contacts__item-address
+{
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-weight: $medium-font;
+	color: $black;
+}
+
+.contacts__item-schedule
+{
+	span:first-child
+	{
+		display: inline-block;
+		width: 108px;
+	}
+}
+
+.contacts__hr
+{
+	height: 2px;
+	width: 100%;
+	background-color: $light-grey;
+	margin-bottom: 32px;
+}
+
+.contacts__hr-inner
+{
+	display: none;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100px;
+	height: 2px;
+	background-color: $green;
+}
+
+.contacts__item.active .contacts__hr-inner{display: block;}
+
+@media (max-width: $mobile-sm)
+{
+	.contacts__wr
+	{
+		margin-top: 0;
+		padding-bottom: 40px;
+	}
+
+	.contacts__item-wr
+	{
+		margin-right: 16px;
+		min-width: 212px;
+		max-width: 212px;
+	}
+	.contacts__items{display: flex;}
+	.contacts__item{min-width: 0;}
+	.ic-store-contacts{display: none;}
+	.contacts__item-content{margin-left: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+.account-details__contacts
+{
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+	margin-bottom: 7px;
+}
+.account-details__contacts-wr
+{
+	&:last-child
+	{
+		margin-left: 20px;
+		flex-grow: 1;
+	}
+}
+.account-details__contacts-item
+{
+	position: relative;
+	margin-bottom: 25px;
+	span
+	{
+		display: block;
+		font-size: 12px;
+		margin-bottom: 8px;
+		color: $dark-grey;
+	}
+	input
+	{
+		height: 40px;
+		width: 100%;
+		padding-left: 12px;
+		border: solid 1px $grey;
+		border-radius: 6px;
+		width: 288px;
+		transition: .2s;
+		&::placeholder{color:$dark-grey;}
+		&:focus {border-color: $green;}
+	}
+}
+.account-details__contacts-flex
+{
+	display: flex;
+}
+.account-details__date
+{
+	margin-bottom: 34px;
+}
+.account-details__date-items
+{
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 16px;
+}
+.account-details__date-descr
+{
+	color: $dark-grey;
+}
+.account-details__date-item
+{
+	span
+	{
+		display: block;
+		font-size: 12px;
+		margin-bottom: 8px;
+		color: $dark-grey;
+	}
+	&:not(:first-child)
+	{
+		margin-left: 8px;
+	}
+	&:not(:nth-child(2))
+	{
+		width: 78px;
+	}
+	&:nth-child(2)
+	{
+		width: 116px;
+	}
+}
+.account-details__sex
+{
+	position: relative;
+	margin-bottom: 32px;
+}
+.account-details__sex-item
+{
+	margin-bottom: 11px;
+}
+.account-details__button
+{
+	margin-bottom: 80px;
+}
+@media(max-width: $tablet)
+{
+	.account-details__contacts
+	{
+		flex-direction: column;
+	}
+	.account-details__contacts-wr
+	{
+		&:last-child
+		{
+			margin-left: 0;
+		}
+	}
+}
+
+
+@media(max-width: $mobile-sm)
+{
+	.account-details__contacts-flex--phone
+	{
+		input
+		{
+			max-width: 169px;
+			width: 100%;
+		}
+	}
+	.account-details__contacts-item
+	{
+		margin-bottom: 24px;
+	}
+	.account-details__contacts
+	{
+		margin-bottom: 8px;
+	}
+	.account-details__date-items
+	{
+		margin-bottom: 20px;
+	}
+	.account-details__button
+	{
+		margin-bottom: 40px;
+	}
+}

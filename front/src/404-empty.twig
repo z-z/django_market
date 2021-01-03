@@ -1,0 +1,10 @@
+{% extends "./layouts/empty.twig" %}
+{% set emptyImg = "ic-notfound" %}
+{% set emptyTitle = "Страница не найдена" %}
+{% set emptyDescr = "Возможно, она была удалена или никогда не существовала." %}
+{% set emptyTitleCarousel = "Популярные товары" %}
+{% set carouselType = "common" %}
+
+{% block empty %}
+	{% include "blocks/back.twig" %}
+{% endblock empty %}

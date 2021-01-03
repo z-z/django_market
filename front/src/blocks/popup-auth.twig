@@ -1,0 +1,51 @@
+{% extends "../layouts/popup-body.twig" %}
+{% set popupName = "popup-auth" %}
+
+{% block popupConent %}
+	<div class="popup-auth">
+		<div class="g-popup__title popup-auth__title">
+			Вход
+		</div>
+		<div class="g-popup__text g-popup__text-soc">
+			Через соцсети
+			<div class="g-popup__social popup-auth__social">
+				<a href="#" class="g-popup__soc popup-auth__soc">
+					<svg role="img" class="ic-vk">
+						<use xlink:href="#ic-vk"></use>
+					</svg>
+				</a>
+				<a href="#" class="g-popup__soc popup-auth__soc">
+					<svg role="img" class="ic-facebook">
+						<use xlink:href="#ic-facebook"></use>
+					</svg>
+				</a>
+				<a href="#" class="g-popup__soc popup-auth__soc">
+					<svg role="img" class="ic-inst">
+						<use xlink:href="#ic-inst"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		{# l-input_error - класс для невалидного поля #}
+		<label class="l-input popup-auth__input">
+			<div class="l-input__label">Email *</div>
+			<div class="l-input__sub-text">Error message</div>
+			<input name="CODE" type="text" class="g-input l-input__input" placeholder="Введите ваш email" value="">
+		</label>
+		<label class="l-input popup-auth__input">
+			<div class="l-input__label">Пароль *</div>
+			<div class="l-input__sub-text">Error message</div>
+			<input name="CODE" type="text" class="g-input l-input__input" placeholder="Введите пароль" value="">
+		</label>
+
+		<div class="popup-auth__restore">
+			<a href="#" class="popup-confirm__restore-link" onclick="o2.popups.closePopup(); o2.popups.showPopup('.popup-recovery')">Восстановить пароль</a>
+		</div>
+		<div class="g-primary-button popup-auth__btn popup-auth__btn-log">
+			Войти
+		</div>
+		<div class="g-secondary-button popup-auth__btn popup-auth__btn-reg" onclick="o2.popups.closePopup(); o2.popups.showPopup('.popup-registr')">
+			Регистрация
+		</div>
+	</div>
+{% endblock %}

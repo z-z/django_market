@@ -1,0 +1,35 @@
+.news-slider__text
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+.news-slider__content
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: normal;
+	color: $white;
+	background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 54%, rgba(0, 0, 0, 0.6));
+	@include background;
+	padding-left: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 6px;
+}
+.news-slider__data
+{
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	svg
+	{
+		display: inline-block;
+		margin-right: 9px;
+	}
+}

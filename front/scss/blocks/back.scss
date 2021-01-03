@@ -1,0 +1,25 @@
+.back
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+	margin-left: 5px;
+}
+.back__link
+{
+	display: flex;
+	align-items: center;
+	color: $dark-grey;
+	&::before
+	{
+		content: '';
+		display: block;
+		width: 6px;
+		height: 14px;
+		background-image: url(../img/assets/left-arrow.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		margin-right: 10px;
+	}
+}

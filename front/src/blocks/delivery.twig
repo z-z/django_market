@@ -1,0 +1,82 @@
+<div class="delivery">
+	<h2 class="delivery__title">Доставка</h2>
+		<div class="delivery__info">
+			Вы можете оформить доставку лекарств на дом или забрать их из ближайшей аптеки.
+		</div>
+		<div class="delivery__card-wr">
+			<div class="delivery__card-title">
+				{% include "../../img/svg-for-sprite/help-truck.svg" %}
+				<span>Доставка на дом</span>
+			</div>
+			<p class="delivery__text delivery__text_mb-none">
+				Заказы доставляются в течении 30 минут с момента оформления заказа на сайте или по телефону. Курьер свяжется с вами, когда привезёт заказ.<br><br>
+				Вы также можете заказать доставку на конкретный день или время. Предупредите об этом оператора, если вы делаете заказ по телефону, или оставьте комментарий, если вы оформляете заказ через сайт.
+			</p>
+		</div>
+
+		<div class="delivery__card-wr">
+			<div class="delivery__card-title">
+				{% include "../../img/svg-for-sprite/ic-place.svg" %}
+				<span>Самовывоз</span>
+			</div>
+			<p class="delivery__text">
+				Вы также можете забрать заказ из одной из наших трех аптек по адресам:
+			</p>
+			<div class="delivery__map-block">
+				<div class="delivery__map-left">
+					<div class="delivery__map-card active" data-objectid="4949">
+						<div class="delivery__map-img">
+							<img src="../img/im-pharmacy-3@2x.png" alt="">
+						</div>
+						<div>
+							<div class="delivery__shop-name">
+								{% include "../../img/svg-for-sprite/ic-store-delivery.svg" %}
+								<span>Аптека Гелиос</span>
+							</div>
+							<span class="delivery__adress">ул. Генерала Плиева 30</span>
+						</div>
+					</div>
+
+					<div class="delivery__map-card" data-objectid="4947">
+						<div class="delivery__map-img">
+							<img src="../img/im-pharmacy-2@2x.png" alt="">
+						</div>
+						<div>
+							<div class="delivery__shop-name">
+								{% include "../../img/svg-for-sprite/ic-store-delivery.svg" %}
+								<span>Аптека Гелиос</span>
+							</div>
+							<span class="delivery__adress">Проспект Коста 270</span>
+						</div>
+					</div>
+
+					<div class="delivery__map-card" data-objectid="4948">
+						<div class="delivery__map-img">
+							<img src="../img/im-pharmacy-1@2x.png" alt="">
+						</div>
+						<div>
+							<div class="delivery__shop-name">
+								{% include "../../img/svg-for-sprite/ic-store-delivery.svg" %}
+								<span>Аптека Гелиос</span>
+							</div>
+							<span class="delivery__adress">Проспект Коста 281</span>
+						</div>
+					</div>
+				</div>
+				<div class="delivery__map-right">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="delivery__card-wr">
+			<div class="delivery__card-title">
+				{% include "../../img/svg-for-sprite/ic-box-grey.svg" %}
+				<span>Статус заказа</span>
+			</div>
+			<p class="delivery__text delivery__text_mb-none">
+				Готовность вашего заказа к самовывозу уточняйте по телефону <a href="tel:289898">28-98-98</a>
+			</p>
+		</div>
+	</div>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=7613024e-ec5b-4903-aaa2-fde6827deb98&lang=ru_RU" type="text/javascript"></script>

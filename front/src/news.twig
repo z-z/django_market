@@ -1,0 +1,13 @@
+{% extends "./layouts/layout.twig" %}
+{% block page %}
+	<div class="container news">
+		{% include "blocks/breadcrumbs.twig" %}
+		<h2 class="title">Новости</h2>
+		<div class="news-page_news">
+		{% for i in 0..8 %}
+			{% include "/blocks/news-card.twig" %}
+		{% endfor %}
+		</div>
+		<button class="simple-button simple-button_catalog">Показать ещё</button>
+	</div>
+{% endblock page %}

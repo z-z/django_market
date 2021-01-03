@@ -1,0 +1,47 @@
+.sidebar-menu .catalog-menu__item:nth-child(n+7)
+{
+	display: none;
+}
+.sidebar-menu__hide, .sidebar-menu__show
+{
+	color: $green;
+	font-size: 14px;
+	display: none;
+	cursor: pointer;
+	svg
+	{
+		margin-left: 8px;
+	}
+}
+.sidebar-menu--btn-active
+{
+	display: flex;
+}
+.sidebar-menu .catalog-menu__name a
+{
+	font-size: 14px;
+}
+.sidebar-menu__title
+{
+	display: none;
+	position: relative;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	margin-left: -16px;
+	text-align: center;
+	font-weight: $medium-font;
+	font-size: 14px;
+}
+.sidebar-menu__close
+{
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+@media(max-width:$mobile-sm)
+{
+	.sidebar-menu__title{display: block;}
+	.sidebar-menu:last-child{padding-bottom: 24px;}
+}

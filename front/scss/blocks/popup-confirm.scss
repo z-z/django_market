@@ -1,0 +1,41 @@
+.popup-confirm__text
+{
+	margin-bottom: 16px;
+}
+.popup-confirm__input
+{
+	display: block;
+	margin-bottom: 30px;
+}
+.popup-confirm__phone-num
+{
+	display: flex;
+	align-items: center;
+	color: $cblack;
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+.popup-confirm__phone-change
+{
+	display: block;
+	margin-left: 8px;
+	color: #00ca5f;
+	cursor: pointer;
+}
+.popup-confirm__time { margin-bottom: 16px; }
+.popup-confirm__time_mobile { display: none; }
+.popup-confirm__btn
+{
+	width: 100%;
+	font-size: 14px;
+}
+
+@media (max-width: $mobile-sm)
+{
+	.popup-confirm__time { display: none; }
+	.popup-confirm__time_mobile
+	{
+		display: block;
+		margin-bottom: 16px;
+	}
+}

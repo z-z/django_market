@@ -1,0 +1,81 @@
+.g-radio
+{
+	position: relative;
+	font-size: 0;
+	display: block;
+	font-size: 14px;
+}
+.g-radio__input
+{
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	visibility: hidden;
+	opacity: 0;
+	&:enabled
+	{
+		// включен
+		& ~ .g-radio__body
+		{
+			cursor: pointer;
+			.g-radio__box {border-color: $grey; }
+			.g-radio__text {color: $dark-grey; }
+		}
+		// включен, но не выбран
+		&:not(:checked)
+		{
+			& ~ .g-radio__body:hover .g-radio__box {border-color: $green; }
+		}
+		// включен и выбран
+		&:checked ~ .g-radio__body .g-radio__box{border-color: $green;}
+		&:checked ~ .g-radio__body .g-radio__box:before
+		{
+			content:'';
+			display: block;
+			border-radius: 10px;
+			width:8px;
+			height:8px;
+			background: $green;
+			position: relative;
+			top: 2px;
+			left:2px;
+		}
+		// состояние фокуса
+		&:hover ~ .g-radio__body .g-radio__text{color: $green}
+	}
+	// выключен и выбран
+	&:disabled:checked ~ .g-radio__body .g-radio__box
+	{
+		border-color: pink;
+		background-color: gray;
+	}
+}
+// базовые стили для выключенного состояния
+.g-radio__body
+{
+	display: flex;
+	align-items: center;
+}
+.g-radio__box
+{
+	min-width: 16px;
+	max-width: 16px;
+	min-height: 16px;
+	max-height: 16px;
+	border: 2px solid $grey;
+	display: inline-block;
+	vertical-align: top;
+	transition: 0.2s;
+	border-radius: 100%;
+}
+.g-radio__text
+{
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 18px;
+	white-space: nowrap;
+}

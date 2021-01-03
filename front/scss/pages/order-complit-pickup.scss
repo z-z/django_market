@@ -1,0 +1,33 @@
+.order-complit__pickup
+{
+	display: flex;
+	margin-bottom: 32px;
+}
+.order-complit__pickup-descr
+{
+	margin-left: 16px;
+}
+.order-complit__pickup-name
+{
+	color: $dark-grey;
+	margin-bottom: 6px;
+}
+.order-complit__pickup-address
+{
+	font-size: 16px;
+	font-weight: $medium-font;
+	margin-bottom: 8px;
+}
+.order-complit__pickup-when
+{
+	color: $dark-grey;
+	margin-bottom: 16px;
+}
+.order-complit__pickup-item
+{
+	color: $dark-grey;
+	display: flex;
+	justify-content: space-between;
+	max-width: 202px;
+	width: 202px;
+}

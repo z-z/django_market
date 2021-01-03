@@ -1,0 +1,172 @@
+.header
+{
+	margin-bottom: 32px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	padding-bottom: 16px;
+	position: relative;
+	z-index: 1;
+}
+.header__bottom-wrapper
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: reletiv;
+}
+.header__logo
+{
+	line-height: 0;
+	cursor: pointer;
+}
+.header__search-block
+{
+	display: flex;
+}
+.header__button
+{
+	cursor: pointer;
+}
+.header__bottom-item
+{
+	display: flex;
+	align-items: center;
+	color: $black;
+	font-size: 14px;
+	position: relative;
+	cursor: pointer;
+	svg
+	{
+		margin-right: 8px;
+	}
+}
+.header__logo-md
+{
+	display: none;
+}
+.header__btn-icon
+{
+	display: none;
+	line-height: 0;
+}
+.header__btn-icon.header__btn-icon_active
+{
+	display: block;
+}
+
+.header__mobile
+{
+display: none;
+}
+.header__mobile-wrapper
+{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+padding-top: 8px;
+line-height: 0;
+}
+.header__mobile-hamburger, .header__mobile-favorites
+{
+	margin-right: 22px;
+}
+.header__mobile-right
+{
+	display: flex;
+	.header__mobile-icon:first-child
+	{
+		margin-right: 24px;
+	}
+}
+.header__mobile-icon
+{
+	position: relative;
+}
+
+.ic-search-active
+{
+	display: none;
+}
+
+.header__bubble
+{
+	position: absolute;
+	background-color: $red;
+	top: -3px;
+	left: 18px;
+	font-size: 9px;
+	min-height: 14px;
+	min-width: 14px;
+	border-radius: 8px;
+	color: $white;
+	font-weight: $medium-font;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: normal;
+	border: 1px solid $white;
+	padding-left: 2.5px;
+	padding-right: 3px;
+	padding-bottom: 1px;
+}
+.header__bubble_favorites
+{
+	height: 14px;
+	left: 15px;
+	padding-left: 3.7px;
+}
+.header__bubble_hide
+{
+	display: none;
+}
+@media(max-width: 940px)
+{
+	.header__logo-md
+	{
+		display: block;
+	}
+	.header__logo-lg
+	{
+		display: none;
+	}
+}
+
+@media (max-width: $mobile-sm)
+{
+	.header
+	{
+		padding-bottom: 8px;
+		margin-bottom: 16px;
+	}
+	.header__wrapper
+	{
+		display: none;
+	}
+	.header__mobile
+	{
+		display: block;
+		position: relative;
+	}
+	.header__mobile-logo .logo-gelios-mark
+	{
+		display: none;
+	}
+	.header__bottom
+	{
+		display: none;
+	}
+}
+
+@media (max-width: $mobile-xs)
+{
+	.header__mobile-logo .logo-gelios-mark
+	{
+		display: block;
+		margin-top: -2px;
+	}
+	.header__mobile-logo .logo-gelios-horizontal
+	{
+		display: none;
+	}
+}
+

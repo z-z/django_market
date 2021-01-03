@@ -1,0 +1,80 @@
+{% extends "./layouts/account-layout.twig" %}
+{% block account %}
+	<h3 class="title title--account">Контактные данные</h3>
+	<div class="account-details__contacts">
+		<div class="account-details__contacts-wr">
+			<div class="account-details__contacts-item error">
+				<span>Имя *</span>
+				<div class="l-input__sub-text">Error message</div>
+				<input class="l-input__input" type="text" placeholder="Введите ваше имя">
+			</div>
+			<div class="account-details__contacts-item error">
+				<span>Фамилия *</span>
+				<div class="l-input__sub-text">Error message</div>
+				<input class="l-input__input" type="text" placeholder="Введите вашу Фамилию">
+			</div>
+		</div>
+		<div class="account-details__contacts-wr">
+			<div class="account-details__contacts-item">
+				<span>Номер телефона *</span>
+				<div class="l-input__sub-text">Error message</div>
+				<div class="account-details__contacts-flex account-details__contacts-flex--phone">
+					<input type="text" placeholder="+7 (999) 123-23-34">
+					<button class="button-activate button-activate--account-details">Подтвердить</button>
+				</div>
+			</div>
+			<div class="account-details__contacts-item">
+				<span>Email *</span>
+				<div class="l-input__sub-text">Error message</div>
+				<input type="email" placeholder="Введите ваш email">
+			</div>
+		</div>
+	</div>
+	<h3 class="title title--account">Дата рождения</h3>
+	<div class="account-details__date">
+		<div class="account-details__date-items">
+			<div class="account-details__date-item">
+				<span>День *</span>
+				{% include './blocks/select.twig' with { "id": 1 }%}
+			</div>
+			<div class="account-details__date-item">
+				<span>Месяц *</span>
+				{% include './blocks/select.twig' with { "id": 2 }%}
+			</div>
+			<div class="account-details__date-item">
+				<span>Год *</span>
+				{% include './blocks/select.twig' with { "id": 3 }%}
+			</div>
+			<div class="l-input__sub-text">Error message</div>
+		</div>
+		<div class="account-details__date-descr">
+			Получайте поздравления и дополнительные скидки
+		</div>
+	</div>
+	<h3 class="title title--short-margin">Пол</h3>
+	<div class="account-details__sex">
+		<div class="l-input__sub-text">Error message</div>
+		<div class="account-details__sex-item">
+			<label class="g-radio">
+			<input type="radio" name="boom1" class="g-radio__input"  >
+			<div class="g-radio__body">
+				<span class="g-radio__box"></span>
+				<span class="g-radio__text">Мужской</span>
+			</div>
+			</label>
+		</div>
+		<div class="account-details__sex-item">
+			<label class="g-radio g-radio--account-details">
+			<input type="radio" name="boom1" class="g-radio__input"  >
+			<div class="g-radio__body">
+				<span class="g-radio__box"></span>
+				<span class="g-radio__text">Женский</span>
+			</div>
+			</label>
+		</div>
+	</div>
+	<div class="account-details__button">
+		<button class="g-primary-button g-primary-button--account-details" disabled="disabled">Сохранить</button>
+	</div>
+{% endblock account %}
+

@@ -1,0 +1,86 @@
+{% extends "layouts/layout.twig" %}
+{% block page %}
+	<div class="container">
+		<div class="contacts__wr">
+			{% include 'blocks/breadcrumbs.twig' %}
+			<h2 class="title">Адреса аптек</h2>
+			<div class="contacts__items">
+				<div class="contacts__item-wr">
+					<div class="contacts__item" data-objectId="1">
+						<svg role="img" class="ic-store-contacts">
+							<use xlink:href="#ic-store-contacts"></use>
+						</svg>
+						<div class="contacts__item-content">
+							<div class="contacts__item-wr-top">
+								<div>Аптека Гелиос</div>
+								<div class="contacts__item-address">Москва, ул.Мясницкая, 24/7с2</div>
+								<a href="tel:">+7 (495) 692-53-50</a>
+							</div>
+							<div class="contacts__item-wr-bottom">
+								<div class="contacts__item-schedule">
+									<span>Будни</span>
+									<span>09:00 — 19:00</span>
+								</div>
+								<div class="contacts__item-schedule">
+									<span>Суббота</span>
+									<span>10:00 — 19:00</span>
+								</div>
+								<div class="contacts__item-schedule">
+									<span>Воскресенье</span>
+									<span>10:00 — 19:00</span>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__hr-inner"></div>
+					</div>
+				</div>
+				<div class="contacts__item-wr">
+					<div class="contacts__item" data-objectId="2">
+						<svg role="img" class="ic-store-contacts">
+							<use xlink:href="#ic-store-contacts"></use>
+						</svg>
+						<div class="contacts__item-content">
+							<div class="contacts__item-wr-top">
+								<div>Аптека Гелиос</div>
+								<div class="contacts__item-address">Москва, Лубянский пр. 15 стр 2</div>
+								<a href="tel:">+7 (925) 306-44-42</a>
+							</div>
+							<div class="contacts__item-wr-bottom">
+								<div class="contacts__item-schedule">
+									<span>Круглосуточно</span>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__hr-inner"></div>
+					</div>
+				</div>
+				<div class="contacts__item-wr">
+					<div class="contacts__item" data-objectId="3">
+						<svg role="img" class="ic-store-contacts">
+							<use xlink:href="#ic-store-contacts"></use>
+						</svg>
+						<div class="contacts__item-content">
+							<div class="contacts__item-wr-top">
+								<div>Аптека Гелиос</div>
+								<div class="contacts__item-address">Москва, Лубянский пр. 15 стр 2</div>
+								<a href="tel:">+7 (925) 306-44-42</a>
+							</div>
+							<div class="contacts__item-wr-bottom">
+								<div class="contacts__item-schedule">
+									<span>Круглосуточно</span>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__hr-inner"></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="contacts__hr">
+				
+			</div>
+			<div id="map"></div>
+		</div>
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=7613024e-ec5b-4903-aaa2-fde6827deb98&lang=ru_RU" type="text/javascript"></script>
+{% endblock %}

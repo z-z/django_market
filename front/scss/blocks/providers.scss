@@ -1,0 +1,49 @@
+.providers__title
+{
+	font-size: 18px;
+	font-weight: $bold-font;
+	line-height: normal;
+	margin-bottom: 24px;
+}
+.providers__info
+{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 24px;
+}
+.providers__cards-title
+{
+	font-weight: $bold-font;
+	margin-bottom: 16px;
+}
+.providers__contacts
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+
+	svg
+	{
+		margin-right: 16px;
+		width: 24px;
+		height: 24px;
+		fill: $grey;
+	}
+}
+.providers__phone-text
+{
+	font-weight: $bold-font;
+	color: $cblack;
+}
+.providers__email-text
+{
+	font-weight: 500;
+	color: $cblack;
+}
+@media(max-width: $mobile-sm)
+{
+	.providers__title
+	{
+		display: none;
+	}
+}

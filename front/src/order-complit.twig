@@ -1,0 +1,117 @@
+{% extends "./layouts/layout.twig" %}
+
+{% block page %}
+	<div class="order-complit__wrapper">
+		{% include "blocks/breadcrumbs.twig" %}
+		<h2 class="title">Ваш заказ успешно оформлен!</h2>
+		<div class="order-complit__descr">Мы позвоним вам или отправим СМС, чтобы подтвердить заказ.</div>
+		<h3 class="title order-complit__subtitle">Заказ № 9418-34819</h3>
+		<div class="order-complit__check">
+			<div class="order-complit__item">
+					<div class="order-complit__item-img"><img src="../img/assets/im-discount-big.png" alt=""></div>
+					<div class="order-complit__right">
+					<div class="order-complit__item-name">Кальцемин адванс таб. п.о №120</div>
+					<div class="order-complit__item-wr">
+						<div class="order-complit__item-quantity">1 шт.</div>
+						<div class="order-complit__item-price">68,88 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-complit__item">
+					<div class="order-complit__item-img"><img src="../img/assets/im-order-product-02.png" alt=""></div>
+				<div class="order-complit__right">
+					<div class="order-complit__item-name">Раствор Bausch & Lomb Renu MPS</div>
+					<div class="order-complit__item-wr">
+						<div class="order-complit__item-quantity">2	 шт.</div>
+						<div class="order-complit__item-price">251 ₽</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-complit__item">
+				<div class="order-complit__left-wr">
+					<div class="order-complit__item-property">
+						3 товара на сумму
+					</div>
+					<div class="order-complit__item-property">
+						Скидка по промокоду
+					</div>
+					<div class="order-complit__item-property">
+						Доставка
+					</div>
+					<div class="order-complit__item-property">
+						Итоговая стоимость
+					</div>
+				</div>
+				<div class="order-complit__right-wr">
+					<div class="order-complit__item-value">
+						319,88 ₽
+					</div>
+					<div class="order-complit__item-value">
+						-200 ₽
+					</div>
+					<div class="order-complit__item-value">
+						Бесплатно
+					</div>
+					<div class="order-complit__item-value">
+						119,88 ₽
+					</div>
+				</div>
+			</div>
+		</div>
+		<h3 class="title order-complit__subtitle">Получатель</h3>
+		<div class="order-complit__recipient">
+			<div class="order-complit__recipient-item">
+				<svg role="img" class="ic-user-order">
+					<use xlink:href="#ic-user-order"></use>
+				</svg>
+				<div class="order-complit__recipient-name">
+					Евгений Петров
+				</div>
+			</div>
+			<div class="order-complit__recipient-item">
+				<svg role="img" class="ic-phone-order">
+					<use xlink:href="#ic-phone-order"></use>
+				</svg>
+				<div class="order-complit__recipient-name">
+					+7 (999) 123-23-34
+				</div>
+			</div>
+			<div class="order-complit__recipient-item">
+				<svg role="img" class="ic-mail-order">
+					<use xlink:href="#ic-mail-order"></use>
+				</svg>
+				<div class="order-complit__recipient-name">
+					eugene-petrov@mail.com
+				</div>
+			</div>
+		</div>
+		<h3 class="title order-complit__subtitle">Адрес доставки</h3>
+		<div class="order-complit__address">
+			<div class="order-complit__address-item">
+				<svg role="img" class="ic-location-order">
+					<use xlink:href="#ic-location-order"></use>
+				</svg>
+				<div class="order-complit__address-name">
+					Москва,  Лубянский пр., 99/280
+				</div>
+			</div>
+			<div class="order-complit__address-item">
+				<svg role="img" class="ic-truck-order">
+					<use xlink:href="#ic-truck-order"></use>
+				</svg>
+				<div class="order-complit__address-name">
+					День доставки: Воскресенье, 23 февраля
+				</div>
+			</div>
+			<div class="order-complit__address-item">
+				<svg role="img" class="ic-time-order">
+					<use xlink:href="#ic-time-order"></use>
+				</svg>
+				<div class="order-complit__address-name">
+					Время доставки: с 09:00 до 12:00
+				</div>
+			</div>
+		</div>
+		<a href="#" class="simple-button simple-button--order-complit">Перейти на главную</a>
+	</div>
+{% endblock %}

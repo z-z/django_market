@@ -1,0 +1,312 @@
+<div class="catalog-filter">
+	<div class="sidebar-menu__title">
+		Сортировка и фильтры
+		<div class="sidebar-menu__close" onclick="o2.popups.mainCatalogMenuHide()">
+			<svg role="img" class="close-mobile">
+				<use xlink:href="#close-mobile"></use>
+			</svg>
+		</div>
+		<div class="devider devider_main-catalog"></div>
+	</div>
+	<div class="catalog-filter__block">
+		<div class="catalog-filter__block-title" onclick="o2.popups.filterBlockClose(this)">
+			Сортировать
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+				<path fill="#01A54E" fill-rule="evenodd" d="M3.542 10.673c0 .372.29.66.66.66a.673.673 0 00.48-.2l3.824-3.885 3.812 3.886c.129.127.302.2.48.2.37 0 .66-.29.66-.661a.625.625 0 00-.19-.455L9.02 5.9a.693.693 0 00-1.034-.006l-4.254 4.318a.648.648 0 00-.19.46z"/>
+			</svg>
+		</div>
+		<div class="catalog-filter__block-inputs">
+			<div class="catalog-filter__sort-price" onclick="o2.popups.filterSortpprice(this)">
+				<div>
+					<svg role="img" class="ic-sort-down">
+						<use xlink:href="#ic-sort-down"></use>
+					</svg>
+					<svg role="img" class="ic-sort-up">
+						<use xlink:href="#ic-sort-up"></use>
+					</svg>
+				</div>
+				<span>Цена</span>
+			</div>
+			<label class="g-checkbox catalog-filter__input-line">
+				<input type="checkbox" class="g-checkbox__input" checked>
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">В наличии</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Новинки</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Популярные</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Скидки и акции</span>
+				</div>
+			</label>
+		</div>
+	</div>
+	<div class="catalog-filter__block">
+		<div class="catalog-filter__block-title" onclick="o2.popups.filterBlockClose(this)">
+			Цена
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+				<path fill="#01A54E" fill-rule="evenodd" d="M3.542 10.673c0 .372.29.66.66.66a.673.673 0 00.48-.2l3.824-3.885 3.812 3.886c.129.127.302.2.48.2.37 0 .66-.29.66-.661a.625.625 0 00-.19-.455L9.02 5.9a.693.693 0 00-1.034-.006l-4.254 4.318a.648.648 0 00-.19.46z"/>
+			</svg>
+		</div>
+		<div class="catalog-filter__block-inputs catalog-filter__block-inputs--price-slider">
+			{% include "../blocks/price-slider.twig" with {fieldName: "namge", type: "range", min: 100, max: 1000, from: 200, to: 800} %}
+		</div>
+	</div>
+	<div class="catalog-filter__block">
+		<div class="catalog-filter__block-title" onclick="o2.popups.filterBlockClose(this)">
+			Производитель
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+				<path fill="#01A54E" fill-rule="evenodd" d="M3.542 10.673c0 .372.29.66.66.66a.673.673 0 00.48-.2l3.824-3.885 3.812 3.886c.129.127.302.2.48.2.37 0 .66-.29.66-.661a.625.625 0 00-.19-.455L9.02 5.9a.693.693 0 00-1.034-.006l-4.254 4.318a.648.648 0 00-.19.46z"/>
+			</svg>
+		</div>
+		<div class="catalog-filter__block-inputs">
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Galderma</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Glenmark</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Globopharm</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Janssen</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Sandoz</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">АКРИХИН</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Белмедпрепараты</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Вертекс</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Глобофарм</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Galderma</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Glenmark</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Globopharm</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Janssen</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Sandoz</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">АКРИХИН</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Белмедпрепараты</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Вертекс</span>
+				</div>
+			</label>
+			<label class="g-checkbox catalog-filter__input-line catalog-menu__item">
+				<input type="checkbox" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">Глобофарм</span>
+				</div>
+			</label>
+			<div class="sidebar-menu__buttons">
+				<div class="sidebar-menu__show sidebar-menu--btn-active" onclick="o2.popups.sidebarMenuShowOther(this)">Смотреть всё
+					<svg role="img" class="ic-down-arrow-kopiya">
+						<use xlink:href="#ic-down-arrow-kopiya"></use>
+					</svg>
+				</div>
+				<div class="sidebar-menu__hide" onclick="o2.popups.sidebarMenuHideOther(this)">Скрыть
+					<svg role="img" class="ic-up-arrow">
+						<use xlink:href="#ic-up-arrow"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="catalog-filter__block">
+		<div class="catalog-filter__block-title" onclick="o2.popups.filterBlockClose(this)">
+			Рецептурный препарат
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+				<path fill="#01A54E" fill-rule="evenodd" d="M3.542 10.673c0 .372.29.66.66.66a.673.673 0 00.48-.2l3.824-3.885 3.812 3.886c.129.127.302.2.48.2.37 0 .66-.29.66-.661a.625.625 0 00-.19-.455L9.02 5.9a.693.693 0 00-1.034-.006l-4.254 4.318a.648.648 0 00-.19.46z"/>
+			</svg>
+		</div>
+		<div class="catalog-filter__block-inputs">
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  >
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Да</span>
+				</div>
+			</label>
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  checked>
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Нет</span>
+				</div>
+			</label>
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  >
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Не важно</span>
+				</div>
+			</label>
+		</div>
+	</div>
+	<div class="catalog-filter__block catalog-filter__block--close">
+		<div class="catalog-filter__block-title"  onclick="o2.popups.filterBlockClose(this)">
+			Форма выпуска
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+				<path fill="#01A54E" fill-rule="evenodd" d="M3.542 10.673c0 .372.29.66.66.66a.673.673 0 00.48-.2l3.824-3.885 3.812 3.886c.129.127.302.2.48.2.37 0 .66-.29.66-.661a.625.625 0 00-.19-.455L9.02 5.9a.693.693 0 00-1.034-.006l-4.254 4.318a.648.648 0 00-.19.46z"/>
+			</svg>
+		</div>
+		<div class="catalog-filter__block-inputs">
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  >
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Да</span>
+				</div>
+			</label>
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  checked>
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Нет</span>
+				</div>
+			</label>
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  >
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Не важно</span>
+				</div>
+			</label>
+		</div>
+	</div>
+	<div class="catalog-filter__block catalog-filter__block--close">
+		<div class="catalog-filter__block-title" onclick="o2.popups.filterBlockClose(this)">
+			Минимальный возраст
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+				<path fill="#01A54E" fill-rule="evenodd" d="M3.542 10.673c0 .372.29.66.66.66a.673.673 0 00.48-.2l3.824-3.885 3.812 3.886c.129.127.302.2.48.2.37 0 .66-.29.66-.661a.625.625 0 00-.19-.455L9.02 5.9a.693.693 0 00-1.034-.006l-4.254 4.318a.648.648 0 00-.19.46z"/>
+			</svg>
+		</div>
+		<div class="catalog-filter__block-inputs">
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  >
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Да</span>
+				</div>
+			</label>
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  checked>
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Нет</span>
+				</div>
+			</label>
+			<label class="g-radio catalog-filter__input-line">
+				<input type="radio" name="boom1" class="g-radio__input"  >
+				<div class="g-radio__body">
+					<span class="g-radio__box"></span>
+					<span class="g-radio__text">Не важно</span>
+				</div>
+			</label>
+		</div>
+	</div>
+</div>

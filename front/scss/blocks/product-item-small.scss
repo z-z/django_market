@@ -1,0 +1,72 @@
+.product-item-small
+{
+	font-family: "Rubik";
+	max-width: 150px;
+	min-width: 150px;
+	font-size: 15px;
+	position: relative;
+}
+.product-item-small__img
+{
+	display: block;
+	max-width: 150px;
+	height: 152px;
+	img
+	{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.product-item-small__title
+{
+	display: block;
+	color: $cblack;
+	cursor: pointer;
+	line-height: 18px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	height: 36px;
+	overflow: hidden;
+}
+.product-item-small__prices
+{
+	display: flex;
+	align-items: flex-end;
+	line-height: 17px;
+	margin-bottom: 12px;
+	margin-top: 9px;
+}
+.product-item-small__current-price
+{
+	display: block;
+	font-weight: bold;
+	font-size: 13px;
+}
+.product-item-small__old-price
+{
+	font-size: 11px;
+	color: $dark-grey;
+	position: relative;
+	line-height: 15px;
+	margin-left: 7px;
+	&:after
+	{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: $cblack;
+		position: absolute;
+		top: 7px;
+	}
+}
+@media (max-width: $mobile-xs)
+{
+	.product-item-small
+	{
+		max-width: 136px;
+		min-width: 136px;
+		margin-right: 16px;
+	}
+}

@@ -1,0 +1,99 @@
+{% extends "./layouts/account-layout.twig" %}
+{% block account %}
+
+<h3 class="title title--account">Заказы</h3>
+<div class="account-orders__list">
+	<div class="account-orders__list-item">
+		<div class="account-orders__item-left">
+			<div class="account-orders__item-number">
+				№ 9418-34819
+			</div>
+			<div class="account-orders__item-date">
+				04 февраля 2020
+			</div>
+		</div>
+		<div class="account-orders__item-right">
+			<div class="account-orders__item-status">
+				Оформление
+			</div>
+			<div class="account-orders__item-price">
+				68,88 ₽
+			</div>
+		</div>
+		<div class="account-orders__item-more">
+			<a href="" class="simple-button simple-button--orders">Подробнее</a>
+		</div>
+	</div>
+	<div class="account-orders__list-item">
+		<div class="account-orders__item-left">
+			<div class="account-orders__item-number">
+				№ 8464-18462
+			</div>
+			<div class="account-orders__item-date">
+				12 марта 2020
+			</div>
+		</div>
+		<div class="account-orders__item-right">
+			<div class="account-orders__item-status">
+				Готов к выдачи
+			</div>
+			<div class="account-orders__item-price">
+				2 587 ₽
+			</div>
+		</div>
+		<div class="account-orders__item-more">
+			<a href="" class="simple-button simple-button--orders">Подробнее</a>
+		</div>
+	</div>
+	<div class="account-orders__list-item">
+		<div class="account-orders__item-left">
+			<div class="account-orders__item-number">
+				№ 9487-10986
+			</div>
+			<div class="account-orders__item-date">
+				14 апреля 2020
+			</div>
+		</div>
+		<div class="account-orders__item-right">
+			<div class="account-orders__item-status">
+				Завершен
+			</div>
+			<div class="account-orders__item-price">
+				500 ₽
+			</div>
+		</div>
+		<div class="account-orders__item-more">
+			<a href="" class="simple-button simple-button--orders">Подробнее</a>
+		</div>
+	</div>
+	<div class="account-orders__list-item">
+		<div class="account-orders__item-left">
+			<div class="account-orders__item-number">
+				№ 0986-86745
+			</div>
+			<div class="account-orders__item-date">
+				22 июля 2020
+			</div>
+		</div>
+		<div class="account-orders__item-right">
+			<div class="account-orders__item-status">
+				Отменён
+			</div>
+			<div class="account-orders__item-price">
+				0 ₽
+			</div>
+		</div>
+		<div class="account-orders__item-more">
+			<a href="" class="simple-button simple-button--orders">Подробнее</a>
+		</div>
+	</div>
+</div>
+<div class="account-orders__more">
+	<div class="accout-orders__more-name">
+		Смотреть всё
+	</div>
+	<svg role="img" class="ic-down-arrow-kopiya">
+		<use xlink:href="#ic-down-arrow-kopiya"></use>
+	</svg>
+</div>
+{% endblock %}

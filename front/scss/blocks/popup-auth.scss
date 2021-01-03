@@ -1,0 +1,23 @@
+.popup-auth__input { margin-bottom: 16px; }
+.popup-auth__restore
+{
+	text-align: right;
+	margin-bottom: 24px;
+	letter-spacing: .07px;
+	font-size: 11px;
+	line-height: 11px;
+}
+.popup-confirm__restore-link { color: #00ca5f; }
+.popup-auth__btn
+{
+	width: 100%;
+	font-size: 15px;
+}
+.popup-auth__btn-log { margin-bottom: 8px; }
+
+
+@media (max-width: $mobile-sm)
+{
+	.popup-auth__text-soc { margin-bottom: 16px; }
+	.popup-auth__restore { margin-bottom: 16px; }
+}
